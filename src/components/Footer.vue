@@ -1,13 +1,11 @@
 <script setup>
-import { RouterLink } from 'vue-router'
-
 defineOptions({
   name: 'AppFooter',
 })
 </script>
 
 <template>
-  <footer class="bg-danger background">
+  <footer class="background border border-top-1 border-secondary">
     <div class="container d-flex align-items-center justify-content-between">
       <div class="footer-text">
         <h4 class="lh-140 fw-normal fs-9">

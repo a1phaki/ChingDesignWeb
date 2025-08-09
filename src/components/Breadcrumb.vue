@@ -25,7 +25,7 @@ watch(
 </script>
 
 <template>
-  <nav aria-label="breadcrumb" class="container background">
+  <nav v-if="paths.length > 1" aria-label="breadcrumb" class="container background">
     <ol class="breadcrumb mb-0">
       <li
         v-for="(path, index) in paths"
@@ -38,7 +38,9 @@ watch(
           <span class="text-success">{{ pathChineseMap[path] || path }}</span>
         </template>
         <template v-else>
-          <RouterLink :to="getPath(index)" class="text-decoration-none">{{ path }}</RouterLink>
+          <RouterLink :to="getPath(index)" class="text-decoration-none">
+            {{ path }}
+          </RouterLink>
         </template>
       </li>
     </ol>
