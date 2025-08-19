@@ -1,160 +1,27 @@
 <template>
-  <div class="head bg-danger background">
-    <div class="container">
-      <div class="custom-section">
-        <h2 class="text-dark h1 pb-8 mb-0 fw-medium">Work</h2>
-        <div class="row g-0 justify-content-between pb-16">
-          <div class="col-4">
-            <span class="button border border-1 border-success text-success lh-170">
-              LINE Liff Design
-            </span>
-            <h3 class="text-success mb-0 pt-4 fw-medium">星舟快充 LINE Liff 設計</h3>
-            <p class="pt-16">
-              星舟快充是一家提供電動車充電站服務的營運商。由於當前的電動車充電操作大多依賴手機應用，本專案針對其官方
-              LINE 帳號進行 2.0 版本改版，目標是優化介面設計，提升操作便利性與整體用戶體驗。
-            </p>
-          </div>
-          <div class="col-7">
-            <img
-              src="/LINELiff/MainVision.svg"
-              alt="主圖"
-              class="img-fluid border border-1 border-secondary img-rounded"
-            />
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+  <WorkHead
+    title="星舟快充 LINE Liff 設計"
+    content="星舟快充是一家提供電動車充電站服務的營運商。由於當前的電動車充電操作大多依賴手機應用，本專案針對其官方LINE 帳號進行 2.0 版本改版，目標是優化介面設計，提升操作便利性與整體用戶體驗。"
+    tag="LINE Liff Design"
+    img-url="/LINELiff/MainVision.svg"
+    alt="主圖"
+  />
   <div class="information bg-white">
     <div class="container custom-padding">
-      <section>
-        <BaseDot text="專案資訊" />
-        <hr class="mt-8 mb-6" />
-        <div class="row">
-          <div class="col-6 d-flex">
-            <h4 class="fw-medium fs-9 lh-170">擔任角色</h4>
-            <p class="ps-16">UI/UX 設計師</p>
-          </div>
-          <div class="col-6 d-flex">
-            <h4 class="fw-medium fs-9 lh-170">專案時間</h4>
-            <p class="ps-16">4 個月</p>
-          </div>
-          <div class="col-6 d-flex">
-            <h4 class="fw-medium fs-9 lh-170">使用工具</h4>
-            <ul>
-              <li>Figma</li>
-              <li>Illustrator</li>
-              <li>After Effects</li>
-            </ul>
-          </div>
-          <div class="col-6 d-flex">
-            <h4 class="fw-medium fs-9 lh-170">負責項目</h4>
-            <ul>
-              <li>Task Flow</li>
-              <li>設計系統</li>
-              <li>UI Mockup</li>
-              <li>UI Hand-off</li>
-            </ul>
-          </div>
-        </div>
-      </section>
+      <ProjectInformation
+        role="UI/UX 設計師"
+        project-duration="4 個月"
+        :tools="projectTools"
+        :tasks="projectTasks"
+      />
       <hr class="mb-12" />
-      <section class="row g-0 justify-content-between">
-        <div class="col-6">
-          <BaseDot text="專案挑戰" class="pb-12" />
-          <div class="d-flex">
-            <span class="side-bar"></span>
-            <div>
-              <p class="text-success fw-medium mb-2">1. 平台策略 - 優先採用 LINE LIFF</p>
-              <p class="mb-0">
-                專案初期基於使用者熟悉度與開發時程考量，選擇以 LINE LIFF 作為平台，需克服 WebView
-                體驗與效能上的限制。
-              </p>
-              <p class="text-success fw-medium mb-2 pt-6">2. 設計需具備未來 App 化彈性</p>
-              <p class="mb-0 pb-6">
-                雖然目前為 LIFF
-                頁面，但考量長期產品發展，設計上需保有模組化與系統性，以利未來轉型為原生 App。
-              </p>
-              <p class="text-success fw-medium mb-2">3. 用戶預期與平台落差</p>
-              <p class="mb-0">
-                多數競品為原生 App，使用者對於充電服務的流暢性與穩定性有較高預期，因此需在 LIFF
-                中打造近似原生的使用體驗。
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-6">
-          <img src="/LINELiff/Challenge.svg" alt="專案挑戰圖" class="img-fluid img-padding" />
-        </div>
-      </section>
+      <ProjectChallenge
+        :challenges="projectChallenges"
+        img-url="/LINELiff/Challenge.svg"
+        alt="專案挑戰圖"
+      />
       <hr class="my-12" />
-      <section>
-        <BaseDot text="設計目標" class="pb-12" />
-        <div class="row g-12">
-          <div class="col-4">
-            <div class="card bg-warning border-0 target-card">
-              <div class="card-body p-8">
-                <span class="fw-medium fs-7 text-primary">01</span>
-                <div class="d-flex flex-column align-items-center">
-                  <img
-                    src="/LINELiff/mobile icon.svg"
-                    alt="mobile icon"
-                    class="p-4 bg-white rounded-circle mb-12 icon-img"
-                  />
-                  <h4 class="card-title text-success fw-medium pb-2 fs-9 lh-170">
-                    打造接近原生 App 的流暢體驗
-                  </h4>
-                  <p class="card-text text-center">
-                    透過清晰的資訊架構與簡潔的操作流程，減輕 WebView
-                    帶來的延遲感與互動斷層，提升整體使用感受。
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-4">
-            <div class="card bg-warning border-0 target-card">
-              <div class="card-body p-8">
-                <span class="fw-medium fs-7 text-primary">02</span>
-                <div class="d-flex flex-column align-items-center">
-                  <img
-                    src="/LINELiff/DesignSystem icon.svg"
-                    alt="Design System icon"
-                    class="p-4 bg-white rounded-circle mb-12 icon-img"
-                  />
-                  <h4 class="card-title text-success fw-medium pb-2 fs-9 lh-170">
-                    建立具擴展性的設計系統
-                  </h4>
-                  <p class="card-text text-center">
-                    考量後續產品可能轉為 App，設計初期即選擇 Material Design
-                    為基礎，兼顧行動端支援性與系統延展性。
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-4">
-            <div class="card bg-warning border-0 target-card">
-              <div class="card-body p-8">
-                <span class="fw-medium fs-7 text-primary">03</span>
-                <div class="d-flex flex-column align-items-center">
-                  <img
-                    src="/LINELiff/task icon.svg"
-                    alt="task icon"
-                    class="p-4 bg-white rounded-circle mb-12 icon-img"
-                  />
-                  <h4 class="card-title text-success fw-medium pb-2 fs-9 lh-170">
-                    簡化操作流程、提升任務完成率
-                  </h4>
-                  <p class="card-text text-center">
-                    聚焦核心任務（如查找充電站、啟動充電等）的流程優化，降低首次使用的學習曲線，提高操作直覺性與效率。
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <TargetSection :steps="targetSectionSteps" />
       <hr class="my-12" />
       <section>
         <BaseDot text="任務流程" class="pb-4" />
@@ -184,150 +51,24 @@
         </div>
       </section>
       <hr class="my-12" />
-      <section>
-        <BaseDot text="問題定義" class="pb-4" />
-        <p class="pb-12 mb-0">
-          透過使用流程的分析，我們發現部分操作不夠直覺，功能安排也沒完全符合使用者在充電時的實際需求，這成為後續優化的重點。
-        </p>
-        <div class="row gy-8 gx-16">
-          <div class="col-6">
-            <div class="card border-0 bg-warning problem-card">
-              <div class="card-body p-8 row g-12 justify-content-between">
-                <div class="col-7">
-                  <div class="card-title pb-10 mb-0">
-                    <span
-                      class="step-number fw-bold d-inline-flex justify-content-center align-items-center rounded-circle bg-success text-white lh-140"
-                      >1</span
-                    >
-                    <h4 class="d-inline-block ps-4 text-success fw-bold lh-140 fs-9">
-                      選單內容未貼近使用者需求
-                    </h4>
-                  </div>
-                  <p class="card-text lh-base">
-                    沒有一目了然的充電操作，進到畫面會不知道要先點甚麼
-                  </p>
-                </div>
-                <div class="col-5">
-                  <img
-                    src="/LINELiff/Problem1_menu.svg"
-                    alt="problem1 menu"
-                    class="img-fluid rounded-3"
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-6">
-            <div class="card border-0 bg-warning problem-card">
-              <div class="card-body p-8 row g-12 justify-content-between">
-                <div class="col-7">
-                  <div class="card-title pb-10 mb-0">
-                    <span
-                      class="step-number fw-bold d-inline-flex justify-content-center align-items-center rounded-circle bg-success text-white lh-140"
-                      >2</span
-                    >
-                    <h4 class="d-inline-block ps-4 text-success fw-bold lh-140 fs-9">
-                      無法顯示當前最近充電站
-                    </h4>
-                  </div>
-                  <p class="card-text lh-base">
-                    僅顯示站點列表，無法查看離自己最近的充電站或記錄曾去過的充電站
-                  </p>
-                </div>
-                <div class="col-5">
-                  <img
-                    src="/LINELiff/Problem2_stop.svg"
-                    alt="problem2 stop"
-                    class="img-fluid rounded-3"
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-6">
-            <div class="card border-0 bg-warning problem-card">
-              <div class="card-body p-8 row g-12 justify-content-between">
-                <div class="col-7">
-                  <div class="card-title pb-10 mb-0">
-                    <span
-                      class="step-number fw-bold d-inline-flex justify-content-center align-items-center rounded-circle bg-success text-white lh-140"
-                      >3</span
-                    >
-                    <h4 class="d-inline-block ps-4 text-success fw-bold lh-140 fs-9">
-                      無顯示充電空位與預約
-                    </h4>
-                  </div>
-                  <p class="card-text lh-base">
-                    無法進行充電槍預約，在前往充電站的途中，容易造成使用者等待或撲空
-                  </p>
-                </div>
-                <div class="col-5">
-                  <img
-                    src="/LINELiff/Problem3_reservation.svg"
-                    alt="problem3 reservation"
-                    class="img-fluid rounded-3"
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-6">
-            <div class="card border-0 bg-warning problem-card">
-              <div class="card-body p-8 row g-12 justify-content-between">
-                <div class="col-7">
-                  <div class="card-title pb-10 mb-0">
-                    <span
-                      class="step-number fw-bold d-inline-flex justify-content-center align-items-center rounded-circle bg-success text-white lh-140"
-                      >4</span
-                    >
-                    <h4 class="d-inline-block ps-4 text-success fw-bold lh-140 fs-9">
-                      缺乏自動化的統計和分析
-                    </h4>
-                  </div>
-                  <p class="card-text lh-base">
-                    使用者目前只能以條列方式查看歷史訂單，系統並未提供統計或彙整功能
-                  </p>
-                </div>
-                <div class="col-5">
-                  <img
-                    src="/LINELiff/Problem4_nonAuto.svg"
-                    alt="problem4 nonAuto"
-                    class="img-fluid rounded-3"
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <QuestionSection
+        content="透過使用流程的分析，我們發現部分操作不夠直覺，功能安排也沒完全符合使用者在充電時的實際需求，這成為後續優化的重點。"
+        :questions="questionDefineQuestions"
+      />
       <hr class="my-12" />
-      <section>
-        <BaseDot text="資訊架構" class="pb-4" />
-        <p class="pb-12 mb-0">
-          根據前階段對任務流程的梳理與問題定義，我們重新規劃了頁面結構與功能配置。
-        </p>
-        <img
-          src="/LINELiff/SiteMap.svg"
-          alt="資訊架構圖"
-          class="img-fluid border border-1 border-light bg-info site-map-img"
-        />
-      </section>
+      <InformationArchitecture
+        content="根據前階段對任務流程的梳理與問題定義，我們重新規劃了頁面結構與功能配置。"
+        img-url="/LINELiff/SiteMap.svg"
+        alt="資訊架構圖"
+      />
       <hr class="my-12" />
-      <section>
-        <BaseDot text="設計系統" class="pb-4" />
-        <p class="pb-12 mb-0">
-          採用 Material Design
-          建立具延展性的設計系統，搭配深色視覺，營造品牌穩重與信任感，同時展現科技形象。
-        </p>
-        <div class="row gx-12">
-          <div class="col-6">
-            <img src="/LINELiff/Guideline1.svg" alt="guideline1" />
-          </div>
-          <div class="col-6">
-            <img src="/LINELiff/Guideline2.svg" alt="guideline2" />
-          </div>
-        </div>
-      </section>
+      <DesignSystem
+        content="採用 Material Design 建立具延展性的設計系統，搭配深色視覺，營造品牌穩重與信任感，同時展現科技形象。"
+        img-url1="/LINELiff/Guideline1.svg"
+        alt1="guideline1"
+        img-url2="/LINELiff/Guideline2.svg"
+        alt2="guideline2"
+      />
     </div>
   </div>
   <section class="parallax-section bg-danger">
@@ -469,22 +210,9 @@
 </template>
 
 <style scoped>
-h3 {
-  font-size: 36px;
-}
 p {
   line-height: 170%;
   color: #25262d;
-}
-ul {
-  padding-left: 56px;
-}
-ul > li {
-  list-style: disc;
-}
-.button {
-  border-radius: 100px;
-  padding: 6px 20px;
 }
 .information {
   width: 100%;
@@ -492,15 +220,6 @@ ul > li {
   border-radius: 40px;
   z-index: 10;
   overflow: hidden;
-}
-.head {
-  height: 85vh;
-  position: sticky;
-  top: 0;
-  z-index: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
 }
 .parallax-section {
   height: 60vh;
@@ -549,29 +268,12 @@ ul > li {
   padding-left: 80px;
   object-fit: cover;
 }
-.img-rounded {
-  border-radius: 24px;
-}
 .task-flow-img {
   border-radius: 10px;
 }
 .menu-img {
   border-radius: 10px;
   padding: 64px 32px;
-}
-.icon-img {
-  width: 72px;
-  height: 72px;
-}
-.step-number {
-  width: 28px;
-  height: 28px;
-}
-.target-card {
-  border-radius: 8px;
-}
-.problem-card {
-  border-radius: 12px;
 }
 .site-map-img {
   border-radius: 10px;
@@ -732,6 +434,14 @@ ul > li {
 <script setup>
 import BaseDot from '@/components/Dot.vue'
 import CustomButton from '@/components/Button.vue'
+import WorkHead from '@/components/WorkHead.vue'
+import ProjectInformation from '@/components/ProjectInformation.vue'
+import ProjectChallenge from '@/components/ProjectChallenge.vue'
+import TargetSection from '@/components/TargetSection.vue'
+import QuestionSection from '@/components/QuestionSection.vue'
+import InformationArchitecture from '@/components/InformationArchitecture.vue'
+import DesignSystem from '@/components/DesignSystem.vue'
+
 import { onMounted } from 'vue'
 import Rellax from 'rellax'
 
@@ -740,4 +450,84 @@ onMounted(() => {
     center: true,
   })
 })
+
+const projectTools = ['Figma', 'Illustrator', 'After Effects']
+
+const projectTasks = ['Task Flow', '設計系統', 'UI Mockup', 'UI Hand-off']
+
+const projectChallenges = [
+  {
+    title: '平台策略 - 優先採用 LINE LIFF',
+    content:
+      '專案初期基於使用者熟悉度與開發時程考量，選擇以 LINE LIFF 作為平台，需克服 WebView體驗與效能上的限制。',
+  },
+  {
+    title: '設計需具備未來 App 化彈性',
+    content:
+      '雖然目前為 LIFF頁面，但考量長期產品發展，設計上需保有模組化與系統性，以利未來轉型為原生 App。',
+  },
+  {
+    title: '用戶預期與平台落差',
+    content:
+      '多數競品為原生 App，使用者對於充電服務的流暢性與穩定性有較高預期，因此需在 LIFF中打造近似原生的使用體驗。',
+  },
+]
+
+const targetSectionSteps = [
+  {
+    stepNum: '01',
+    title: '打造接近原生 App 的流暢體驗',
+    content:
+      '透過清晰的資訊架構與簡潔的操作流程，減輕 WebView帶來的延遲感與互動斷層，提升整體使用感受。',
+    img: '/LINELiff/mobile icon.svg',
+    alt: 'mobile icon',
+  },
+  {
+    stepNum: '02',
+    title: '建立具擴展性的設計系統',
+    content:
+      '考量後續產品可能轉為 App，設計初期即選擇 Material Design為基礎，兼顧行動端支援性與系統延展性。',
+    img: '/LINELiff/DesignSystem icon.svg',
+    alt: 'Design System icon',
+  },
+  {
+    stepNum: '03',
+    title: '簡化操作流程、提升任務完成率',
+    content:
+      '聚焦核心任務（如查找充電站、啟動充電等）的流程優化，降低首次使用的學習曲線，提高操作直覺性與效率。',
+    img: '/LINELiff/task icon.svg',
+    alt: 'task icon',
+  },
+]
+
+const questionDefineQuestions = [
+  {
+    num: '1',
+    title: '選單內容未貼近使用者需求',
+    content: '沒有一目了然的充電操作，進到畫面會不知道要先點甚麼',
+    img: '/LINELiff/Problem1_menu.svg',
+    alt: 'problem1 menu',
+  },
+  {
+    num: '2',
+    title: '無法顯示當前最近充電站',
+    content: '僅顯示站點列表，無法查看離自己最近的充電站或記錄曾去過的充電站',
+    img: '/LINELiff/Problem2_stop.svg',
+    alt: 'problem2 stop',
+  },
+  {
+    num: '3',
+    title: '無顯示充電空位與預約',
+    content: '無法進行充電槍預約，在前往充電站的途中，容易造成使用者等待或撲空',
+    img: '/LINELiff/Problem3_reservation.svg',
+    alt: 'problem3 reservation',
+  },
+  {
+    num: '4',
+    title: '缺乏自動化的統計和分析',
+    content: '使用者目前只能以條列方式查看歷史訂單，系統並未提供統計或彙整功能',
+    img: '/LINELiff/Problem4_nonAuto.svg',
+    alt: 'problem4 nonAuto',
+  },
+]
 </script>

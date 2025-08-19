@@ -5,7 +5,7 @@ defineOptions({
 </script>
 
 <template>
-  <footer class="background border border-top-1 border-secondary">
+  <footer class="background border border-top-1 border-secondary bg-danger">
     <div class="container d-flex align-items-center justify-content-between">
       <div class="footer-text">
         <h4 class="lh-140 fw-normal fs-9">
