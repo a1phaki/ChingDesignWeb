@@ -149,7 +149,9 @@
         </p>
         <div class="row">
           <div class="col-4">
-            <h4 class="fw-medium lh-170 fs-9 text-success pb-4">Must Have</h4>
+            <h4 class="fw-medium lh-170 fs-9 text-success pb-4 d-flex">
+              <img src="/ChargingStation/MustHavePin.svg" alt="MustHavePin" class="pe-2" />Must Have
+            </h4>
             <table class="table table-rounded">
               <thead>
                 <tr class="table-info">
@@ -182,7 +184,13 @@
             </table>
           </div>
           <div class="col-4">
-            <h4 class="fw-medium lh-170 fs-9 text-success pb-4">Nice to Have</h4>
+            <h4 class="fw-medium lh-170 fs-9 text-success pb-4 d-flex">
+              <img
+                src="/ChargingStation/NicetoHaveStar.svg"
+                alt="NicetoHaveStar"
+                class="pe-2"
+              />Nice to Have
+            </h4>
             <table class="table table-rounded">
               <thead>
                 <tr class="table-info">
@@ -207,7 +215,13 @@
             </table>
           </div>
           <div class="col-4">
-            <h4 class="fw-medium lh-170 fs-9 text-success pb-4">Can Come Later</h4>
+            <h4 class="fw-medium lh-170 fs-9 text-success pb-4 d-flex">
+              <img
+                src="/ChargingStation/CanComeLaterLamp.svg"
+                alt="CanComeLaterLamp"
+                class="pe-2"
+              />Can Come Later
+            </h4>
             <table class="table table-rounded">
               <thead>
                 <tr class="table-info">

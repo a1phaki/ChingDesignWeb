@@ -3,7 +3,7 @@ import HomeView from '../views/HomeView.vue'
 import ProfileView from '../views/ProfileView.vue'
 import WorkView from '../views/WorkView.vue'
 import LineLiffView from '../views/LineLiffView.vue'
-import CharingStationView from '@/views/CharingStationView.vue'
+import CharingStationView from '@/views/ChargingStationView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
