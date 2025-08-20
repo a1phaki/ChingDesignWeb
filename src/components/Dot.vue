@@ -16,7 +16,7 @@ const props = defineProps({
 </script>
 
 <template>
-  <div class="d-flex align-items-center gap-2">
+  <div class="d-flex align-items-center">
     <span class="dot"></span>
     <p class="fs-7 mb-0 text-success">{{ props.text }}</p>
   </div>

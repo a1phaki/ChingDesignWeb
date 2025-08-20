@@ -249,98 +249,126 @@
   <div class="information">
     <section class="bg-white custom-padding">
       <div class="container">
-        <div class="bar-target-mockup2 position-relative">
-          <div class="bar-line" style="top: 225px">
-            <div class="bar-dot-left"></div>
+        <BaseDot text="易用性測試" class="pb-12" />
+        <div class="d-flex align-items-start mb-12">
+          <p class="bg-success text-white custom-rounded-2 fw-bold mb-0 fs-8 lh-140">站點評估</p>
+          <ul class="lh-170 ps-8">
+            <li>任務情境：業務取得地址，需要透過系統進行建站評估，生成評分</li>
+            <li>任務目的：了解使用者能否透過系統快速評估建站潛力，與操作準確性</li>
+          </ul>
+        </div>
+        <h4 class="fw-medium fs-7 pb-4">Before</h4>
+        <img
+          src="/ChargingStation/Usability_before.svg"
+          alt="Usability_before"
+          class="img-fluid w-100 mb-12"
+        />
+        <img src="/ChargingStation/feedback.svg" alt="feedback" class="img-fluid w-100 mb-12" />
+        <h4 class="fw-medium fs-7 pb-4">After</h4>
+        <img
+          src="/ChargingStation/Usability_After.svg"
+          alt="Usability_After"
+          class="img-fluid w-100"
+        />
+      </div>
+    </section>
+    <section class="bg-info">
+      <div>
+        <div class="bar-target-interface position-relative">
+          <div class="bar-line" style="top: 274px">
             <div class="bar-line-body-left"></div>
           </div>
-          <div class="d-flex justify-content-center">
+          <div class="d-flex justify-content-center pt-16">
             <BaseDot text="介面展示" class="pb-4" />
           </div>
           <div class="row">
             <div class="col-6">
-              <img src="/LINELiff/Mockup2_最近充電站.svg" alt="mockup2" />
+              <img
+                src="/ChargingStation/interface1.svg"
+                alt="interface1"
+                class="img-fluid object-fit-cover"
+              />
             </div>
-            <div class="col-6 d-flex flex-column align-items-end">
-              <h4 class="fw-medium fs-7 pb-5 custom-padding-2">
-                <span class="high-light"> 快速掌握最近充電站，輕鬆回訪充電足跡！ </span>
-              </h4>
-              <p class="text-end pt-8 ps-20 ms-20 mb-20">
-                介面除了能即時查看附近可用的充電站外，搜尋欄也會記錄使用者過去使用過的站點，方便快速選取，提升整體操作效率。
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="bg-info">
-      <div class="container">
-        <div class="bar-target-mockup1 position-relative overflow-hidden">
-          <div class="bar-line" style="top: 330px">
-            <div class="bar-dot-right"></div>
-            <div class="bar-line-body-right"></div>
-          </div>
-          <div class="row">
-            <div class="col-6 d-flex flex-column align-items-start">
+            <div class="col-5 d-flex flex-column align-items-end">
               <h4 class="fw-medium fs-7 pb-5 custom-padding-1">
-                <span class="high-light"> 即時掌握充電空位，預約無憂，告別撲空！ </span>
+                <span class="high-light"> 熱力圖色彩規劃 </span>
               </h4>
-              <p class="text-start pt-8 pe-20 me-20 mb-20">
-                介面整合即時充電樁狀態查詢與預約功能，使用者可一眼掌握空位情況，避免白跑，也能提前預約，提升整體充電效率與掌控感。
+              <p class="text-end pt-8 ps-24 ms-24 mb-20">
+                為保持深色背景的設計感，同時避免紅色帶來警示感，熱力圖採用藍綠漸變，密集區域以淺亮色呈現，兼顧直覺性與視覺美感
               </p>
-            </div>
-
-            <div class="col-6">
-              <div class="img-wrapper">
-                <img src="/LINELiff/Mockup1_掌握充電空位.svg" alt="mockup1" class="img-position" />
-              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
     <section class="bg-white">
-      <div class="container">
-        <div class="bar-target-mockup2 position-relative">
-          <div class="bar-line" style="top: 274px">
-            <div class="bar-dot-left-2"></div>
-            <div class="bar-line-body-left-2"></div>
+      <div>
+        <div class="bar-target-interface position-relative">
+          <div class="bar-line" style="top: 279px">
+            <div class="bar-dot-right"></div>
+            <div class="bar-line-body-right"></div>
           </div>
-          <div class="row">
-            <div class="col-6">
-              <img src="/LINELiff/Mockup3_掌握充電進度.svg" alt="mockup3" class="img-position-2" />
-            </div>
-            <div class="col-6 d-flex flex-column align-items-end">
-              <h4 class="fw-medium fs-7 pb-5 custom-padding-3">
-                <span class="high-light"> 隨時掌握充電進度，行程無縫順行！</span>
+          <div class="row justify-content-between h-100">
+            <div class="offset-1 col-5 d-flex flex-column align-items-start">
+              <h4 class="fw-medium fs-7 pb-5 custom-padding-2">
+                <span class="high-light"> 可視化地圖，一眼掌握最佳分布！ </span>
               </h4>
-              <p class="text-end pt-8 ps-20 ms-20 mb-20">
-                介面提供即時充電進度回報，使用者可隨時查看目前充電狀態，搭配充電完成通知，讓行程安排更有彈性也更安心。
+              <p class="text-start pt-8 pe-24 me-24 mb-20">
+                系統以直觀地圖呈現場址與周邊資訊，從行政區到村里不同粒度的資料都能清楚展示，幫助使用者快速掌握最佳分布與潛在熱區。
               </p>
+            </div>
+            <div class="col-6 d-flex align-items-center">
+              <img
+                src="/ChargingStation/interface2.svg"
+                alt="interface2"
+                class="img-fluid object-fit-cover"
+              />
             </div>
           </div>
         </div>
       </div>
     </section>
     <section class="bg-info">
-      <div class="container py-16">
-        <div class="bar-target-mockup4 position-relative overflow-hidden">
-          <div class="bar-line" style="top: 239px">
-            <div class="bar-dot-right-2"></div>
-            <div class="bar-line-body-right-2"></div>
+      <div>
+        <div class="bar-target-interface position-relative">
+          <div class="bar-line" style="top: 274px">
+            <div class="bar-dot-left-2"></div>
+            <div class="bar-line-body-left-2"></div>
           </div>
-          <div class="row">
-            <div class="col-6 d-flex flex-column align-items-start">
-              <h4 class="fw-medium fs-7 pb-5 custom-padding-4">
-                <span class="high-light"> 智慧分析充電支出，輕鬆掌握用電成本！ </span>
+          <div class="row h-100">
+            <div class="col-6 d-flex align-items-center position-relative">
+              <img src="/ChargingStation/interface3.svg" alt="interface3" class="img-position" />
+            </div>
+            <div class="col-5 d-flex flex-column align-items-end">
+              <h4 class="fw-medium fs-7 pb-5 custom-padding-3">
+                <span class="high-light"> 多維度數據整合，靈活圖層篩選！ </span>
               </h4>
-              <p class="text-start pt-8 pe-20 me-20 mb-20">
-                系統整合充電紀錄與金額統計，讓使用者能清楚掌握每次充電的支出與用電趨勢，協助更有效地管理用電成本。
+              <p class="text-end pt-8 ps-24 ms-24 mb-20">
+                整合交通流量、家戶數、POI
+                景點、競爭品牌等多種資料，並提供靈活圖層切換功能，讓使用者依需求查看不同資訊維度，提升分析效率。
               </p>
             </div>
-
-            <div class="col-6">
-              <img src="/LINELiff/Mockup4_智慧分析充電支出.svg" alt="mockup4" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="bg-white">
+      <div>
+        <div class="bar-target-interface position-relative">
+          <div class="bar-line" style="top: 279px">
+            <div class="bar-line-body-right-2"></div>
+          </div>
+          <div class="row justify-content-between h-100">
+            <div class="offset-1 col-5 d-flex flex-column align-items-start">
+              <h4 class="fw-medium fs-7 pb-5 custom-padding-4">
+                <span class="high-light"> 智能選址評分，助你精準決策！ </span>
+              </h4>
+              <p class="text-start pt-8 pe-24 me-24 mb-20">
+                自動對輸入的場址進行評分，結合多項指標提供量化參考，協助業務精準判斷每個場址的開發潛力與優先順序。
+              </p>
+            </div>
+            <div class="col-6 d-flex align-items-center position-relative">
+              <img src="/ChargingStation/interface4.svg" alt="interface4" class="img-position-2" />
             </div>
           </div>
         </div>
@@ -369,6 +397,10 @@ p {
 .custom-rounded {
   padding: 6.5px 20px;
   border-radius: 100px;
+}
+.custom-rounded-2 {
+  padding: 4.5px 24px;
+  border-radius: 38px;
 }
 .custom-padding {
   padding: 60px;
@@ -406,46 +438,28 @@ p {
   right: 0;
   width: calc(100% + 0.6em);
   height: 16px;
-  background-color: #ffd194;
+  background-color: #b0f5e6;
   opacity: 0.7;
   z-index: -1; /* 確保在文字後面 */
 }
-.custom-padding-2 {
-  padding-top: 125px;
-}
 .custom-padding-1 {
-  padding-top: 275px;
+  padding-top: 124px;
+}
+.custom-padding-2 {
+  padding-top: 225px;
 }
 .custom-padding-3 {
   padding-top: 220px;
 }
 .custom-padding-4 {
-  padding-top: 185px;
+  padding-top: 225px;
 }
 .custom-padding-5 {
   padding: 100px 176px;
 }
-.bar-target-mockup2 {
+.bar-target-interface {
   overflow: hidden;
-  height: 635px;
-}
-.bar-target-mockup2::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 200px;
-  pointer-events: none;
-  background: linear-gradient(to bottom, rgba(255, 255, 255, 0), #fff);
-  z-index: 10;
-}
-.bar-target-mockup1 {
-  height: 635px;
-  overflow: hidden; /* ✨ 只讓下方超出被裁切 */
-}
-.bar-target-mockup4 {
-  height: 635px;
+  height: 600px;
 }
 .img-wrapper {
   overflow: visible; /* ✨ 允許圖片橫向超出 */
@@ -457,27 +471,17 @@ p {
   pointer-events: none; /* 不要影響點擊 */
   z-index: 5;
 }
-.bar-dot-left {
-  position: absolute;
-  left: 34.5%;
-  width: 6px;
-  height: 6px;
-  background-color: #769bd9;
-  border-radius: 50%;
-  transform: translateX(-50%);
-  top: 0;
-}
 .bar-line-body-left {
   position: absolute;
-  left: 34.5%;
-  width: 100%;
+  left: 43.5%;
+  width: 48%;
   height: 1px;
   background-color: #769bd9;
   top: 2.5px;
 }
 .bar-dot-right {
   position: absolute;
-  right: 17%;
+  right: 46.5%;
   width: 6px;
   height: 6px;
   background-color: #769bd9;
@@ -487,15 +491,15 @@ p {
 }
 .bar-line-body-right {
   position: absolute;
-  right: 17%;
-  width: 100%;
+  right: 46.5%;
+  width: 45.5%;
   height: 1px;
   background-color: #769bd9;
   top: 2.5px;
 }
 .bar-dot-left-2 {
   position: absolute;
-  left: 40%;
+  left: 37.7%;
   width: 6px;
   height: 6px;
   background-color: #769bd9;
@@ -505,98 +509,35 @@ p {
 }
 .bar-line-body-left-2 {
   position: absolute;
-  left: 40%;
-  width: 100%;
+  left: 37.7%;
+  width: 54%;
   height: 1px;
   background-color: #769bd9;
   top: 2.5px;
 }
-.bar-dot-right-2 {
-  position: absolute;
-  right: 42.5%;
-  width: 6px;
-  height: 6px;
-  background-color: #769bd9;
-  border-radius: 50%;
-  transform: translateX(50%);
-  top: 0;
-}
 .bar-line-body-right-2 {
   position: absolute;
-  right: 42.5%;
-  width: 100%;
+  right: 36.75%;
+  width: 55%;
   height: 1px;
   background-color: #769bd9;
   top: 2.5px;
 }
 .img-position {
   position: absolute;
-  right: -10%;
+  left: -21%;
   z-index: 1;
+  max-width: 100%; /* 以 col-6 為基準縮放 */
 }
 .img-position-2 {
+  width: 90%;
   position: absolute;
-  top: -25%;
+  right: -14%;
   z-index: 1;
 }
 .stepNumber {
   width: 36px;
   height: 36px;
-}
-.side-bar {
-  display: block;
-  width: 7px;
-  background-color: #eaf0f6;
-}
-.table-rounded {
-  border-collapse: separate; /* 保留圓角 */
-  border-spacing: 0; /* 去掉間距 */
-  border: 1px solid #e9e9ea; /* 表格外框 */
-  border-radius: 8px; /* 四角圓角 */
-  overflow: hidden; /* 圓角生效 */
-  width: 100%; /* 滿寬 */
-}
-
-/* 表頭 */
-.table-rounded thead th {
-  border-bottom: 1px solid #e9e9ea;
-  border-right: 1px solid #e9e9ea;
-}
-
-/* 表頭最後一欄 */
-.table-rounded thead th:last-child {
-  border-right: none;
-}
-
-/* 內容列 */
-.table-rounded tbody td,
-.table-rounded tbody th {
-  border-bottom: 1px solid #e9e9ea;
-  border-right: 1px solid #e9e9ea;
-}
-
-/* 內容列最後一欄 */
-.table-rounded tbody td:last-child,
-.table-rounded tbody th:last-child {
-  border-right: none;
-}
-
-/* 最底下列不要下邊線 */
-.table-rounded tbody tr:last-child td,
-.table-rounded tbody tr:last-child th {
-  border-bottom: none;
-}
-.table-rounded th,
-.table-rounded td {
-  padding: 1rem;
-  vertical-align: middle; /* 上下置中 */
-  line-height: 170%;
-}
-.table-rounded th {
-  font-weight: 500;
-}
-.table-rounded td {
-  max-height: 100px;
 }
 </style>
 

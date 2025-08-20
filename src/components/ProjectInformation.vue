@@ -43,7 +43,4 @@ const props = defineProps({
 ul {
   padding-left: 56px;
 }
-ul > li {
-  list-style: disc;
-}
 </style>

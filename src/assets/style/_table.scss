@@ -1,0 +1,45 @@
+.table-rounded {
+  border-collapse: separate;
+  border-spacing: 0;
+  border: 1px solid #e9e9ea;
+  border-radius: 8px;
+  overflow: hidden;
+  width: 100%;
+}
+
+.table-rounded thead th {
+  border-bottom: 1px solid #e9e9ea;
+  border-right: 1px solid #e9e9ea;
+}
+
+.table-rounded thead th:last-child {
+  border-right: none;
+}
+
+.table-rounded tbody td,
+.table-rounded tbody th {
+  border-bottom: 1px solid #e9e9ea;
+  border-right: 1px solid #e9e9ea;
+}
+
+.table-rounded tbody td:last-child,
+.table-rounded tbody th:last-child {
+  border-right: none;
+}
+
+.table-rounded tbody tr:last-child td,
+.table-rounded tbody tr:last-child th {
+  border-bottom: none;
+}
+.table-rounded th,
+.table-rounded td {
+  padding: 1rem;
+  vertical-align: middle;
+  line-height: 170%;
+}
+.table-rounded th {
+  font-weight: 500;
+}
+.table-rounded td {
+  max-height: 100px;
+}
