@@ -14,7 +14,7 @@
         <p class="card-text lh-base">{{ props.content }}</p>
       </div>
       <div class="col-5">
-        <img :src="imgUrl" :alt="alt" class="img-fluid rounded-3" />
+        <img :src="imgUrl" :alt="alt" class="img-fluid rounded-3 bg-white custom-img" />
       </div>
     </div>
   </div>
@@ -24,7 +24,7 @@
 const props = defineProps({
   title: { type: String, required: true },
   content: { type: String, required: true },
-  num: { type: Number, required: true },
+  num: { type: String, required: true },
   imgUrl: { type: String, required: true },
   alt: { type: String, default: 'image' },
 })
@@ -37,5 +37,9 @@ const props = defineProps({
 .step-number {
   width: 28px;
   height: 28px;
+}
+.custom-img {
+  width: 200px;
+  height: 168px;
 }
 </style>

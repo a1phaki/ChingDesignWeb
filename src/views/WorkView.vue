@@ -26,7 +26,7 @@ import { RouterLink } from 'vue-router'
           </RouterLink>
         </div>
         <div class="col-6">
-          <RouterLink to="/work/lineLiff" class="text-decoration-none">
+          <RouterLink to="/work/chargingStation" class="text-decoration-none">
             <img
               src="/Work_Overview/ChargingStationDSSDesign.svg"
               alt="work-img-2"

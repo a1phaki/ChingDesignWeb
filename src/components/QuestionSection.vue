@@ -5,7 +5,7 @@
       {{ props.content }}
     </p>
     <div class="row gy-8 gx-16">
-      <div v-for="question in props.questions" :key="question.num" class="col-6">
+      <div v-for="question in props.questions" :key="question.num" class="col-6 d-flex">
         <QuestionDefineCard
           :title="question.title"
           :content="question.content"

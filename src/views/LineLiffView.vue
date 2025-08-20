@@ -71,9 +71,7 @@
       />
     </div>
   </div>
-  <section class="parallax-section bg-danger">
-    <div class="parallax-background rellax" data-rellax-speed="-5"></div>
-  </section>
+  <ParallaxSection image="/LINELiff/Multiple mockups.svg" />
   <div class="information">
     <section class="bg-white custom-padding">
       <div class="container">
@@ -175,38 +173,11 @@
       </div>
     </section>
   </div>
-  <section class="result bg-danger background">
-    <div class="container d-flex flex-column align-items-center">
-      <BaseDot text="成果後記" class="pb-4" />
-      <p class="mb-0">
-        在製作這個專案的過程中，我們不僅要解決充電站搜尋、預約與費用管理等痛點，還面臨了必須透過
-        LINE LIFF 頁面呈現的挑戰。與市面上的獨立 APP 不同，LIFF
-        限制了即時通知與背景更新功能，需要透過更精簡的介面設計來提升使用體驗，確保資訊清晰、操作流暢。儘管過程充滿挑戰，但希望能讓電動車主的充電體驗更加流暢便捷！
-      </p>
-    </div>
-  </section>
-  <section class="others bg-info">
-    <div class="container row">
-      <div class="col-3">
-        <div class="d-flex pb-16">
-          <span class="text-bar"></span>
-          <div>
-            <p class="mb-2">感謝觀看</p>
-            <h4 class="fs-7 fw-medium text-success">查看其他作品</h4>
-          </div>
-        </div>
-        <CustomButton>查看更多</CustomButton>
-      </div>
-      <div class="col-9 row">
-        <div class="col-6">
-          <img src="" alt="" class="img-fluid img-others bg-success" />
-        </div>
-        <div class="col-6">
-          <img src="" alt="" class="img-fluid img-others bg-success" />
-        </div>
-      </div>
-    </div>
-  </section>
+  <ResultSection
+    content="在製作這個專案的過程中，我們不僅要解決充電站搜尋、預約與費用管理等痛點，還面臨了必須透過
+        LINE LIFF 頁面呈現的挑戰。與市面上的獨立 APP 不同，LIFF限制了即時通知與背景更新功能，需要透過更精簡的介面設計來提升使用體驗，確保資訊清晰、操作流暢。儘管過程充滿挑戰，但希望能讓電動車主的充電體驗更加流暢便捷！"
+  />
+  <OthersWorkSection img-url1="" alt1="" img-url2="" alt2="" />
 </template>
 
 <style scoped>
@@ -221,42 +192,9 @@ p {
   z-index: 10;
   overflow: hidden;
 }
-.parallax-section {
-  height: 60vh;
-  position: relative;
-  z-index: 5;
-}
 
-.parallax-background {
-  position: absolute;
-  left: 0;
-  width: 100%;
-  height: 150%;
-  top: -25%;
-  background-image: url('/LINELiff/Multiple mockups.svg');
-  background-size: cover;
-  background-position: center center;
-}
-.result {
-  width: 100%;
-  position: relative;
-  z-index: 10;
-  padding: 100px 176px;
-}
-.others {
-  width: 100%;
-  position: relative;
-  z-index: 10;
-  padding: 100px 106px;
-}
 .custom-padding {
   padding: 60px;
-}
-.side-bar {
-  display: block;
-  width: 7px;
-  background-color: #eaf0f6;
-  margin-right: 52px;
 }
 .text-bar {
   display: block;
@@ -424,16 +362,10 @@ p {
   top: -25%;
   z-index: 1;
 }
-.img-others {
-  border-radius: 8px;
-  width: 376px;
-  height: 250px;
-}
 </style>
 
 <script setup>
 import BaseDot from '@/components/Dot.vue'
-import CustomButton from '@/components/Button.vue'
 import WorkHead from '@/components/WorkHead.vue'
 import ProjectInformation from '@/components/ProjectInformation.vue'
 import ProjectChallenge from '@/components/ProjectChallenge.vue'
@@ -441,15 +373,9 @@ import TargetSection from '@/components/TargetSection.vue'
 import QuestionSection from '@/components/QuestionSection.vue'
 import InformationArchitecture from '@/components/InformationArchitecture.vue'
 import DesignSystem from '@/components/DesignSystem.vue'
-
-import { onMounted } from 'vue'
-import Rellax from 'rellax'
-
-onMounted(() => {
-  new Rellax('.rellax', {
-    center: true,
-  })
-})
+import ParallaxSection from '@/components/ParallaxSection.vue'
+import ResultSection from '@/components/ResultSection.vue'
+import OthersWorkSection from '@/components/OthersWorkSection.vue'
 
 const projectTools = ['Figma', 'Illustrator', 'After Effects']
 

@@ -6,7 +6,7 @@
         <span class="side-bar"></span>
         <div>
           <template v-for="(challenge, index) in props.challenges" :key="index">
-            <p class="text-success fw-medium mb-2">{{ index + 1 }} {{ challenge.title }}</p>
+            <p class="text-success fw-medium mb-2">{{ index + 1 }}. {{ challenge.title }}</p>
             <p :class="['mb-0', index !== challenges.length - 1 ? 'pb-6' : '']">
               {{ challenge.content }}
             </p>
