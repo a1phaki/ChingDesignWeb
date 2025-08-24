@@ -10,7 +10,7 @@ import { RouterLink } from 'vue-router'
       <div class="row g-16">
         <div class="col-6">
           <RouterLink to="/work/lineLiff" class="text-decoration-none">
-            <img src="/Work_Overview/LINELiff.svg" alt="work-img-1" class="img-fluid work-img" />
+            <img src="/Work_Overview/LINELiff.jpg" alt="work-img-1" class="img-fluid work-img" />
             <div class="tag pt-8" @click.stop>
               <span class="button border border-1 border-success text-success lh-170 me-3">
                 Moible
@@ -28,7 +28,7 @@ import { RouterLink } from 'vue-router'
         <div class="col-6">
           <RouterLink to="/work/chargingStation" class="text-decoration-none">
             <img
-              src="/Work_Overview/ChargingStationDSSDesign.svg"
+              src="/Work_Overview/ChargingStationDSSDesign.jpg"
               alt="work-img-2"
               class="img-fluid work-img"
             />
@@ -49,7 +49,7 @@ import { RouterLink } from 'vue-router'
         <div class="col-6">
           <RouterLink to="/work/lineLiff" class="text-decoration-none">
             <img
-              src="/Work_Overview/CommandCenterDashboard.svg"
+              src="/Work_Overview/CommandCenterDashboard.jpg"
               alt="work-img-3"
               class="img-fluid work-img"
             />
@@ -70,7 +70,7 @@ import { RouterLink } from 'vue-router'
         <div class="col-6">
           <RouterLink to="/work/lineLiff" class="text-decoration-none">
             <img
-              src="/Work_Overview/PlatformRedesign.svg"
+              src="/Work_Overview/PlatformRedesign.jpg"
               alt="work-img-4"
               class="img-fluid work-img"
             />
