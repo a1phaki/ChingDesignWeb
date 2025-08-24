@@ -3,7 +3,7 @@
     title="星舟快充 LINE Liff 設計"
     content="星舟快充是一家提供電動車充電站服務的營運商。由於當前的電動車充電操作大多依賴手機應用，本專案針對其官方LINE 帳號進行 2.0 版本改版，目標是優化介面設計，提升操作便利性與整體用戶體驗。"
     tag="LINE Liff Design"
-    img-url="LINELiff/MainVision.svg"
+    img-url="LINELiff/MainVision.jpg"
     alt="主圖"
   />
   <div class="information bg-white">
@@ -17,7 +17,7 @@
       <hr class="mb-12" />
       <ProjectChallenge
         :challenges="projectChallenges"
-        img-url="LINELiff/Challenge.svg"
+        img-url="LINELiff/Challenge.png"
         alt="專案挑戰圖"
       />
       <hr class="my-12" />
@@ -33,7 +33,7 @@
         <div class="row justify-content-between align-items-center g-0">
           <div class="col-7">
             <img
-              src="/LINELiff/TaskFlow.svg"
+              src="/LINELiff/TaskFlow.png"
               alt="任務流程圖"
               class="img-fluid task-flow-img border border-1 p-12 bg-light"
             />
@@ -43,7 +43,7 @@
           </div>
           <div class="col-3">
             <img
-              src="/LINELiff/Menu.svg"
+              src="/LINELiff/Menu.png"
               alt="選單"
               class="img-fluid menu-img border border-1 bg-light"
             />
@@ -58,15 +58,15 @@
       <hr class="my-12" />
       <InformationArchitecture
         content="根據前階段對任務流程的梳理與問題定義，我們重新規劃了頁面結構與功能配置。"
-        img-url="LINELiff/SiteMap.svg"
+        img-url="LINELiff/SiteMap.png"
         alt="資訊架構圖"
       />
       <hr class="my-12" />
       <DesignSystem
         content="採用 Material Design 建立具延展性的設計系統，搭配深色視覺，營造品牌穩重與信任感，同時展現科技形象。"
-        img-url1="LINELiff/Guideline1.svg"
+        img-url1="LINELiff/Guideline1.png"
         alt1="guideline1"
-        img-url2="LINELiff/Guideline2.svg"
+        img-url2="LINELiff/Guideline2.png"
         alt2="guideline2"
       />
     </div>
@@ -85,7 +85,7 @@
           </div>
           <div class="row">
             <div class="col-6">
-              <img src="/LINELiff/Mockup2_最近充電站.svg" alt="mockup2" />
+              <img src="/LINELiff/Mockup1.png" alt="mockup1" class="img-position-1" />
             </div>
             <div class="col-6 d-flex flex-column align-items-end">
               <h4 class="fw-medium fs-7 pb-5 custom-padding-2">
@@ -118,7 +118,7 @@
 
             <div class="col-6">
               <div class="img-wrapper">
-                <img src="/LINELiff/Mockup1_掌握充電空位.svg" alt="mockup1" class="img-position" />
+                <img src="/LINELiff/Mockup2.png" alt="mockup2" class="img-position-2" />
               </div>
             </div>
           </div>
@@ -134,7 +134,7 @@
           </div>
           <div class="row">
             <div class="col-6">
-              <img src="/LINELiff/Mockup3_掌握充電進度.svg" alt="mockup3" class="img-position-2" />
+              <img src="/LINELiff/Mockup3.png" alt="mockup3" class="img-position-3" />
             </div>
             <div class="col-6 d-flex flex-column align-items-end">
               <h4 class="fw-medium fs-7 pb-5 custom-padding-3">
@@ -166,7 +166,7 @@
             </div>
 
             <div class="col-6">
-              <img src="/LINELiff/Mockup4_智慧分析充電支出.svg" alt="mockup4" />
+              <img src="/LINELiff/Mockup4.png" alt="mockup4" class="img-position-4" />
             </div>
           </div>
         </div>
@@ -352,15 +352,22 @@ p {
   background-color: #769bd9;
   top: 2.5px;
 }
-.img-position {
+.img-position-1 {
+  width: 96%;
+}
+.img-position-2 {
   position: absolute;
   right: -10%;
   z-index: 1;
 }
-.img-position-2 {
+.img-position-3 {
+  width: 43.5%;
   position: absolute;
   top: -25%;
   z-index: 1;
+}
+.img-position-4 {
+  width: 77%;
 }
 </style>
 

@@ -289,19 +289,15 @@
     <section class="bg-info">
       <div>
         <div class="bar-target-interface position-relative">
-          <div class="bar-line" style="top: 274px">
+          <div class="bar-line" style="top: 272px">
             <div class="bar-line-body-left"></div>
           </div>
           <div class="d-flex justify-content-center pt-16">
             <BaseDot text="介面展示" class="pb-4" />
           </div>
-          <div class="row">
-            <div class="col-6">
-              <img
-                src="/ChargingStation/interface1.png"
-                alt="interface1"
-                class="img-fluid object-fit-cover"
-              />
+          <div class="row h-100">
+            <div class="col-6 d-flex position-relative">
+              <img src="/ChargingStation/interface1.png" alt="interface1" class="img-position-1" />
             </div>
             <div class="col-5 d-flex flex-column align-items-end">
               <h4 class="fw-medium fs-7 pb-5 custom-padding-1">
@@ -327,16 +323,12 @@
               <h4 class="fw-medium fs-7 pb-5 custom-padding-2">
                 <span class="high-light"> 可視化地圖，一眼掌握最佳分布！ </span>
               </h4>
-              <p class="text-start pt-8 pe-24 me-24 mb-20">
+              <p class="text-start pt-8 pe-20 me-20 mb-20">
                 系統以直觀地圖呈現場址與周邊資訊，從行政區到村里不同粒度的資料都能清楚展示，幫助使用者快速掌握最佳分布與潛在熱區。
               </p>
             </div>
-            <div class="col-6 d-flex align-items-center">
-              <img
-                src="/ChargingStation/interface2.png"
-                alt="interface2"
-                class="img-fluid object-fit-cover"
-              />
+            <div class="col-6 d-flex align-items-center position-relative">
+              <img src="/ChargingStation/interface2.png" alt="interface2" class="img-position-2" />
             </div>
           </div>
         </div>
@@ -351,7 +343,7 @@
           </div>
           <div class="row h-100">
             <div class="col-6 d-flex align-items-center position-relative">
-              <img src="/ChargingStation/interface3.png" alt="interface3" class="img-position" />
+              <img src="/ChargingStation/interface3.png" alt="interface3" class="img-position-3" />
             </div>
             <div class="col-5 d-flex flex-column align-items-end">
               <h4 class="fw-medium fs-7 pb-5 custom-padding-3">
@@ -382,7 +374,7 @@
               </p>
             </div>
             <div class="col-6 d-flex align-items-center position-relative">
-              <img src="/ChargingStation/interface4.png" alt="interface4" class="img-position-2" />
+              <img src="/ChargingStation/interface4.png" alt="interface4" class="img-position-4" />
             </div>
           </div>
         </div>
@@ -390,8 +382,7 @@
     </section>
   </div>
   <ResultSection
-    content="在製作這個專案的過程中，我們不僅要解決充電站搜尋、預約與費用管理等痛點，還面臨了必須透過
-        LINE LIFF 頁面呈現的挑戰。與市面上的獨立 APP 不同，LIFF限制了即時通知與背景更新功能，需要透過更精簡的介面設計來提升使用體驗，確保資訊清晰、操作流暢。儘管過程充滿挑戰，但希望能讓電動車主的充電體驗更加流暢便捷！"
+    content="透過本專案，我將複雜的數據分析流程轉化為直觀的介面體驗，幫助業務在更短時間內完成選址評估。雖然過程中面臨資料顯示限制與色彩規劃挑戰，但最終透過合理的資訊分層與品牌化設計，成功打造出一套兼具專業與易用性的決策輔助工具。這次經驗也讓我更深刻理解如何在數據密集的情境下，透過 UI/UX 設計提升資訊可讀性與決策效率。"
   />
   <OthersWorkSection img-url1="" alt1="" img-url2="" alt2="" />
 </template>
@@ -487,8 +478,8 @@ p {
 }
 .bar-line-body-left {
   position: absolute;
-  left: 43.5%;
-  width: 48%;
+  left: 42%;
+  width: 50%;
   height: 1px;
   background-color: #769bd9;
   top: 2.5px;
@@ -537,13 +528,22 @@ p {
   background-color: #769bd9;
   top: 2.5px;
 }
-.img-position {
+.img-position-1 {
+  position: absolute;
+  left: -6%;
+  z-index: 1;
+  max-width: 100%; /* 以 col-6 為基準縮放 */
+}
+.img-position-2 {
+  max-width: 100%; /* 以 col-6 為基準縮放 */
+}
+.img-position-3 {
   position: absolute;
   left: -21%;
   z-index: 1;
   max-width: 100%; /* 以 col-6 為基準縮放 */
 }
-.img-position-2 {
+.img-position-4 {
   width: 90%;
   position: absolute;
   right: -14%;
@@ -621,28 +621,28 @@ const questionDefineQuestions = [
     num: '1',
     title: '資料來源分散，整合繁瑣',
     content: '數據分散在多個平台，手動整合耗時且容易出錯',
-    img: 'ChargingStation/questionDefine1.png',
+    img: 'ChargingStation/questionDefine1.svg',
     alt: 'questionDefine1',
   },
   {
     num: '2',
     title: '缺乏高效的數據比對工具',
     content: '缺少自動比對機制，場址評估效率低，操作繁瑣',
-    img: 'ChargingStation/questionDefine2.png',
+    img: 'ChargingStation/questionDefine2.svg',
     alt: 'questionDefine2',
   },
   {
     num: '3',
     title: '需求預測準確度不足',
     content: '依賴人工整合與經驗判斷，數據分散或缺漏容易導致預測不準',
-    img: 'ChargingStation/questionDefine3.png',
+    img: 'ChargingStation/questionDefine3.svg',
     alt: 'questionDefine3',
   },
   {
     num: '4',
     title: '缺乏即時更新的資料',
     content: '資料更新慢，決策依賴手動更新資訊，降低效率',
-    img: 'ChargingStation/questionDefine4.png',
+    img: 'ChargingStation/questionDefine4.svg',
     alt: 'questionDefine4',
   },
 ]
