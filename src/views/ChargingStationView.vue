@@ -3,7 +3,7 @@
     title="智慧開電選址系統"
     content="協助業務團隊評估充電站設點的開發潛力。透過整合地理資訊、商業熱區、競爭態勢與電力可行性等多維度資料，系統可自動計算場址評分，提供具體化選址建議，提升開發效率與成功率。"
     tag="Charging Station DSS Design"
-    img-url="/ChargingStation/titleImg.svg"
+    img-url="ChargingStation/titleImg.png"
     alt="titleImg"
   />
   <div class="information bg-white">
@@ -17,7 +17,7 @@
       <hr class="mb-12" />
       <ProjectChallenge
         :challenges="projectChallenges"
-        img-url="/ChargingStation/projectChallenge.svg"
+        img-url="ChargingStation/projectChallenge.png"
         alt="專案挑戰圖"
       />
       <hr class="my-12" />
@@ -162,23 +162,23 @@
               <tbody>
                 <tr>
                   <th scope="row">地址搜尋</th>
-                  <td>串聯Google，透過系統進行地址搜尋</td>
+                  <td>串聯 Google 地圖，快速搜尋定位場址</td>
                 </tr>
                 <tr>
-                  <th scope="row">可視化數據與界面</th>
-                  <td>透過熱力圖、互動地圖直觀顯示多維度的數據圖表</td>
+                  <th scope="row">可視化數據</th>
+                  <td>熱力圖與互動地圖，直觀呈現多維數據</td>
                 </tr>
                 <tr>
                   <th scope="row">圖層篩選</th>
-                  <td>篩選地圖圖層，包含家戶、小客車、車流、景點與競爭分布</td>
+                  <td>篩選切換家戶、車流、景點與競爭分布圖層</td>
                 </tr>
                 <tr>
                   <th scope="row">評分系統</th>
-                  <td>透過 多維度分析，提供選址評分，減少人工比對</td>
+                  <td>多維度分析產出評分，減少人工比對</td>
                 </tr>
                 <tr>
-                  <th scope="row">年度充電度數預估</th>
-                  <td>預測站點年度充電度數預估，降低錯誤決策風險</td>
+                  <th scope="row">年度度數預估</th>
+                  <td>預測年度充電度數，降低錯誤決策風險</td>
                 </tr>
               </tbody>
             </table>
@@ -200,16 +200,16 @@
               </thead>
               <tbody>
                 <tr>
-                  <th scope="row">多站點資料匯入與評分</th>
-                  <td>一次性上傳多個站點地址，並透過系統自動分析與評分</td>
+                  <th scope="row">多站點匯入</th>
+                  <td>一次上傳多地址，自動分析並給出評分</td>
                 </tr>
                 <tr>
-                  <th scope="row">評分結果匯出報表</th>
-                  <td>將場址評分結果匯出成報表，方便業務分析、內部分享及決策紀錄</td>
+                  <th scope="row">報表匯出</th>
+                  <td>評分結果可匯出，方便彙整決策應用</td>
                 </tr>
                 <tr>
-                  <th scope="row">儲存歷史搜尋與評分記錄</th>
-                  <td>使用者回顧過去評估的站點數據，方便比較並進行長期選址規劃</td>
+                  <th scope="row">歷史紀錄</th>
+                  <td>保存過往站點數據，方便比較與規劃</td>
                 </tr>
               </tbody>
             </table>
@@ -231,12 +231,12 @@
               </thead>
               <tbody>
                 <tr>
-                  <th scope="row">AI 智能選址推薦</th>
-                  <td>AI 自動推薦最佳站點候選清單</td>
+                  <th scope="row">AI 推薦</th>
+                  <td>系統透過 AI，自動推薦最佳候選站點</td>
                 </tr>
                 <tr>
-                  <th scope="row">串聯 Google 街景</th>
-                  <td>使用者可預覽站點周邊環境與設施，確認場地條件</td>
+                  <th scope="row">Google 街景</th>
+                  <td>即時預覽站點周邊街景，確認環境條件</td>
                 </tr>
               </tbody>
             </table>
@@ -246,20 +246,20 @@
       <hr class="my-12" />
       <InformationArchitecture
         content="根據前階段對任務流程的梳理與問題定義，我們重新規劃了頁面結構與功能配置。"
-        img-url="/ChargingStation/informationArchitecture.svg"
+        img-url="ChargingStation/informationArchitecture.svg"
         alt="informationArchitectureImg"
       />
       <hr class="my-12" />
       <DesignSystem
         content="系統採用深色背景，搭配品牌藍綠作為核心元素，營造一致且專業的視覺風格。"
-        img-url1="/ChargingStation/designSystem1.svg"
+        img-url1="ChargingStation/designSystem1.png"
         alt1="designSystem1"
-        img-url2="/ChargingStation/designSystem2.svg"
+        img-url2="ChargingStation/designSystem2.png"
         alt2="designSystem2"
       />
     </div>
   </div>
-  <ParallaxSection image="/ChargingStation/mockup.svg" />
+  <ParallaxSection image="ChargingStation/mockup.svg" />
   <div class="information">
     <section class="bg-white custom-padding">
       <div class="container">
@@ -273,14 +273,14 @@
         </div>
         <h4 class="fw-medium fs-7 pb-4">Before</h4>
         <img
-          src="/ChargingStation/Usability_before.svg"
+          src="/ChargingStation/Usability_before.png"
           alt="Usability_before"
           class="img-fluid w-100 mb-12"
         />
-        <img src="/ChargingStation/feedback.svg" alt="feedback" class="img-fluid w-100 mb-12" />
+        <img src="/ChargingStation/feedback.png" alt="feedback" class="img-fluid w-100 mb-12" />
         <h4 class="fw-medium fs-7 pb-4">After</h4>
         <img
-          src="/ChargingStation/Usability_After.svg"
+          src="/ChargingStation/Usability_After.png"
           alt="Usability_After"
           class="img-fluid w-100"
         />
@@ -298,7 +298,7 @@
           <div class="row">
             <div class="col-6">
               <img
-                src="/ChargingStation/interface1.svg"
+                src="/ChargingStation/interface1.png"
                 alt="interface1"
                 class="img-fluid object-fit-cover"
               />
@@ -333,7 +333,7 @@
             </div>
             <div class="col-6 d-flex align-items-center">
               <img
-                src="/ChargingStation/interface2.svg"
+                src="/ChargingStation/interface2.png"
                 alt="interface2"
                 class="img-fluid object-fit-cover"
               />
@@ -351,7 +351,7 @@
           </div>
           <div class="row h-100">
             <div class="col-6 d-flex align-items-center position-relative">
-              <img src="/ChargingStation/interface3.svg" alt="interface3" class="img-position" />
+              <img src="/ChargingStation/interface3.png" alt="interface3" class="img-position" />
             </div>
             <div class="col-5 d-flex flex-column align-items-end">
               <h4 class="fw-medium fs-7 pb-5 custom-padding-3">
@@ -382,7 +382,7 @@
               </p>
             </div>
             <div class="col-6 d-flex align-items-center position-relative">
-              <img src="/ChargingStation/interface4.svg" alt="interface4" class="img-position-2" />
+              <img src="/ChargingStation/interface4.png" alt="interface4" class="img-position-2" />
             </div>
           </div>
         </div>
@@ -596,14 +596,14 @@ const targetSectionSteps = [
     title: '清晰資訊架構',
     content:
       '設計直觀的圖層與視覺化元素，有效整合多元資料，讓使用者能迅速抓住關鍵資訊，避免資訊過載。',
-    img: '/LINELiff/mobile icon.svg',
+    img: 'LINELiff/mobile icon.svg',
     alt: 'mobile icon',
   },
   {
     stepNum: '02',
     title: '動態資料呈現策略',
     content: '根據地圖縮放層級，精準定義與切換不同粒度資料，確保資訊在各層級皆清晰且易於理解。',
-    img: '/LINELiff/DesignSystem icon.svg',
+    img: 'LINELiff/DesignSystem icon.svg',
     alt: 'Design System icon',
   },
   {
@@ -611,7 +611,7 @@ const targetSectionSteps = [
     title: '流程簡化與整合',
     content:
       '將多重資料與地圖功能整合於單一介面，統一資料來源。簡化操作流程，節省評估時間並提升選址精準度。',
-    img: '/LINELiff/task icon.svg',
+    img: 'LINELiff/task icon.svg',
     alt: 'task icon',
   },
 ]
@@ -621,28 +621,28 @@ const questionDefineQuestions = [
     num: '1',
     title: '資料來源分散，整合繁瑣',
     content: '數據分散在多個平台，手動整合耗時且容易出錯',
-    img: '/ChargingStation/questionDefine1.svg',
+    img: 'ChargingStation/questionDefine1.png',
     alt: 'questionDefine1',
   },
   {
     num: '2',
     title: '缺乏高效的數據比對工具',
     content: '缺少自動比對機制，場址評估效率低，操作繁瑣',
-    img: '/ChargingStation/questionDefine2.svg',
+    img: 'ChargingStation/questionDefine2.png',
     alt: 'questionDefine2',
   },
   {
     num: '3',
     title: '需求預測準確度不足',
     content: '依賴人工整合與經驗判斷，數據分散或缺漏容易導致預測不準',
-    img: '/ChargingStation/questionDefine3.svg',
+    img: 'ChargingStation/questionDefine3.png',
     alt: 'questionDefine3',
   },
   {
     num: '4',
     title: '缺乏即時更新的資料',
     content: '資料更新慢，決策依賴手動更新資訊，降低效率',
-    img: '/ChargingStation/questionDefine4.svg',
+    img: 'ChargingStation/questionDefine4.png',
     alt: 'questionDefine4',
   },
 ]

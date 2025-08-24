@@ -3,7 +3,7 @@
     title="星舟快充 LINE Liff 設計"
     content="星舟快充是一家提供電動車充電站服務的營運商。由於當前的電動車充電操作大多依賴手機應用，本專案針對其官方LINE 帳號進行 2.0 版本改版，目標是優化介面設計，提升操作便利性與整體用戶體驗。"
     tag="LINE Liff Design"
-    img-url="/LINELiff/MainVision.svg"
+    img-url="LINELiff/MainVision.svg"
     alt="主圖"
   />
   <div class="information bg-white">
@@ -17,7 +17,7 @@
       <hr class="mb-12" />
       <ProjectChallenge
         :challenges="projectChallenges"
-        img-url="/LINELiff/Challenge.svg"
+        img-url="LINELiff/Challenge.svg"
         alt="專案挑戰圖"
       />
       <hr class="my-12" />
@@ -58,20 +58,20 @@
       <hr class="my-12" />
       <InformationArchitecture
         content="根據前階段對任務流程的梳理與問題定義，我們重新規劃了頁面結構與功能配置。"
-        img-url="/LINELiff/SiteMap.svg"
+        img-url="LINELiff/SiteMap.svg"
         alt="資訊架構圖"
       />
       <hr class="my-12" />
       <DesignSystem
         content="採用 Material Design 建立具延展性的設計系統，搭配深色視覺，營造品牌穩重與信任感，同時展現科技形象。"
-        img-url1="/LINELiff/Guideline1.svg"
+        img-url1="LINELiff/Guideline1.svg"
         alt1="guideline1"
-        img-url2="/LINELiff/Guideline2.svg"
+        img-url2="LINELiff/Guideline2.svg"
         alt2="guideline2"
       />
     </div>
   </div>
-  <ParallaxSection image="/LINELiff/Multiple mockups.svg" />
+  <ParallaxSection image="LINELiff/Multiple mockups.svg" />
   <div class="information">
     <section class="bg-white custom-padding">
       <div class="container">
@@ -405,7 +405,7 @@ const targetSectionSteps = [
     title: '打造接近原生 App 的流暢體驗',
     content:
       '透過清晰的資訊架構與簡潔的操作流程，減輕 WebView帶來的延遲感與互動斷層，提升整體使用感受。',
-    img: '/LINELiff/mobile icon.svg',
+    img: 'LINELiff/mobile icon.svg',
     alt: 'mobile icon',
   },
   {
@@ -413,7 +413,7 @@ const targetSectionSteps = [
     title: '建立具擴展性的設計系統',
     content:
       '考量後續產品可能轉為 App，設計初期即選擇 Material Design為基礎，兼顧行動端支援性與系統延展性。',
-    img: '/LINELiff/DesignSystem icon.svg',
+    img: 'LINELiff/DesignSystem icon.svg',
     alt: 'Design System icon',
   },
   {
@@ -421,7 +421,7 @@ const targetSectionSteps = [
     title: '簡化操作流程、提升任務完成率',
     content:
       '聚焦核心任務（如查找充電站、啟動充電等）的流程優化，降低首次使用的學習曲線，提高操作直覺性與效率。',
-    img: '/LINELiff/task icon.svg',
+    img: 'LINELiff/task icon.svg',
     alt: 'task icon',
   },
 ]
@@ -431,28 +431,28 @@ const questionDefineQuestions = [
     num: '1',
     title: '選單內容未貼近使用者需求',
     content: '沒有一目了然的充電操作，進到畫面會不知道要先點甚麼',
-    img: '/LINELiff/Problem1_menu.svg',
+    img: 'LINELiff/Problem1_menu.svg',
     alt: 'problem1 menu',
   },
   {
     num: '2',
     title: '無法顯示當前最近充電站',
     content: '僅顯示站點列表，無法查看離自己最近的充電站或記錄曾去過的充電站',
-    img: '/LINELiff/Problem2_stop.svg',
+    img: 'LINELiff/Problem2_stop.svg',
     alt: 'problem2 stop',
   },
   {
     num: '3',
     title: '無顯示充電空位與預約',
     content: '無法進行充電槍預約，在前往充電站的途中，容易造成使用者等待或撲空',
-    img: '/LINELiff/Problem3_reservation.svg',
+    img: 'LINELiff/Problem3_reservation.svg',
     alt: 'problem3 reservation',
   },
   {
     num: '4',
     title: '缺乏自動化的統計和分析',
     content: '使用者目前只能以條列方式查看歷史訂單，系統並未提供統計或彙整功能',
-    img: '/LINELiff/Problem4_nonAuto.svg',
+    img: 'LINELiff/Problem4_nonAuto.svg',
     alt: 'problem4 nonAuto',
   },
 ]
