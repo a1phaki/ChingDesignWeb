@@ -4,6 +4,7 @@ import ProfileView from '../views/ProfileView.vue'
 import WorkView from '../views/WorkView.vue'
 import LineLiffView from '../views/LineLiffView.vue'
 import CharingStationView from '@/views/ChargingStationView.vue'
+import CommandCenterDashboardView from '@/views/CommandCenterDashboardView.vue'
 
 const router = createRouter({
   history: createWebHashHistory(import.meta.env.BASE_URL),
@@ -32,6 +33,11 @@ const router = createRouter({
       path: '/work/chargingStation',
       name: 'work-chargingStation',
       component: CharingStationView,
+    },
+    {
+      path: '/work/CommandCenterDashboard',
+      name: 'work-CommandCenterDashboard',
+      component: CommandCenterDashboardView,
     },
   ],
 })
