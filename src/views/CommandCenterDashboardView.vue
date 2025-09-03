@@ -24,7 +24,7 @@
       <TargetSection :steps="targetSectionSteps" />
       <hr class="my-12" />
       <section>
-        <BaseDot text="資訊架構與視覺放向" class="pb-4" />
+        <BaseDot text="資訊與視覺方向" class="pb-4" />
         <p class="pb-4">
           以 國家為層級、台灣細分事業體，視覺風格強調
           專業、科技、簡潔，確保大螢幕展示清晰易讀，同時符合企業形象。

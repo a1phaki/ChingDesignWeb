@@ -1,7 +1,7 @@
 <template>
   <div class="marquee w-100">
     <div class="marquee-bg"></div>
-    <div class="fs-5 fw-medium d-flex align-items-center">
+    <div class="fs-5 fw-medium d-flex align-items-center special-text">
       <span>{{ props.content }}</span>
       <span>{{ props.content }}</span>
       <span>{{ props.content }}</span>
@@ -19,6 +19,8 @@ const props = defineProps({
 </script>
 
 <style scoped>
+@import url('https://fonts.googleapis.com/css2?family=Saira&display=swap');
+
 .marquee {
   height: 90px;
   position: relative;
@@ -61,5 +63,9 @@ const props = defineProps({
   to {
     transform: translateX(-33.333%); /* 移動「三分之一」寬度 */
   }
+}
+
+.special-text {
+  font-family: 'Saira', sans-serif;
 }
 </style>
