@@ -1,7 +1,7 @@
 <template>
   <section class="others bg-info">
     <div class="container row">
-      <div class="col-3">
+      <div class="col-2">
         <div class="d-flex pb-16">
           <span class="text-bar"></span>
           <div>
@@ -11,12 +11,16 @@
         </div>
         <CustomButton>查看更多</CustomButton>
       </div>
-      <div class="col-9 row">
+      <div class="col-10 row">
         <div class="col-6">
-          <img :src="imgUrl1" :alt="alt1" class="img-fluid img-others bg-success" />
+          <RouterLink :to="route1">
+            <img :src="imgUrl1" :alt="alt1" class="img-fluid img-others bg-success" />
+          </RouterLink>
         </div>
         <div class="col-6">
-          <img :src="imgUrl2" :alt="alt2" class="img-fluid img-others bg-success" />
+          <RouterLink :to="route2">
+            <img :src="imgUrl2" :alt="alt2" class="img-fluid img-others bg-success" />
+          </RouterLink>
         </div>
       </div>
     </div>
@@ -25,11 +29,14 @@
 
 <script setup>
 import CustomButton from '@/components/Button.vue'
+import { RouterLink } from 'vue-router'
 defineProps({
   imgUrl1: { type: String, required: true },
   alt1: { type: String, default: 'image1' },
+  route1: { type: String, required: true },
   imgUrl2: { type: String, required: true },
   alt2: { type: String, default: 'image2' },
+  route2: { type: String, required: true },
 })
 </script>
 
@@ -42,7 +49,11 @@ defineProps({
 }
 .img-others {
   border-radius: 8px;
-  width: 376px;
-  height: 250px;
+}
+.text-bar {
+  display: block;
+  width: 4px;
+  background-color: #eaf0f6;
+  margin-right: 12px;
 }
 </style>

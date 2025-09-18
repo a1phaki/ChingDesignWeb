@@ -177,7 +177,14 @@
     content="在製作這個專案的過程中，我們不僅要解決充電站搜尋、預約與費用管理等痛點，還面臨了必須透過
         LINE LIFF 頁面呈現的挑戰。與市面上的獨立 APP 不同，LIFF限制了即時通知與背景更新功能，需要透過更精簡的介面設計來提升使用體驗，確保資訊清晰、操作流暢。儘管過程充滿挑戰，但希望能讓電動車主的充電體驗更加流暢便捷！"
   />
-  <OthersWorkSection img-url1="" alt1="" img-url2="" alt2="" />
+  <OthersWorkSection
+    img-url1="Work_Overview/PlatformRedesign.jpg"
+    alt1="PlatformRedesign"
+    route1="/work/platformRedesign"
+    img-url2="Work_Overview/ChargingStationDSSDesign.jpg"
+    alt2="ChargingStationDSSDesign"
+    route2="/work/chargingStation"
+  />
 </template>
 
 <style scoped>
@@ -196,12 +203,7 @@ p {
 .custom-padding {
   padding: 60px;
 }
-.text-bar {
-  display: block;
-  width: 4px;
-  background-color: #eaf0f6;
-  margin-right: 12px;
-}
+
 .img-padding {
   padding-left: 80px;
   object-fit: cover;

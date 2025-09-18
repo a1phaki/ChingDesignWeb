@@ -1,6 +1,6 @@
 <template>
   <section>
-    <BaseDot text="設計系統" class="pb-4" />
+    <BaseDot :text="props.text" class="pb-4" />
     <p class="pb-12 mb-0">
       {{ props.content }}
     </p>
@@ -19,6 +19,7 @@
 import BaseDot from '@/components/Dot.vue'
 
 const props = defineProps({
+  text: { type: String, required: true, default: '設計系統' },
   content: { type: String, required: true },
   imgUrl1: { type: String, required: true },
   alt1: { type: String, default: 'image1' },

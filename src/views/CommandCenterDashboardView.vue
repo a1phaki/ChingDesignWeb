@@ -17,27 +17,21 @@
       <hr class="mb-12" />
       <ProjectChallenge
         :challenges="projectChallenges"
-        img-url="ChargingStation/projectChallenge.png"
+        img-url="DashBoard/Challenge.png"
         alt="專案挑戰圖"
       />
       <hr class="my-12" />
       <TargetSection :steps="targetSectionSteps" />
       <hr class="my-12" />
-      <section>
-        <BaseDot text="資訊與視覺方向" class="pb-4" />
-        <p class="pb-4">
-          以 國家為層級、台灣細分事業體，視覺風格強調
-          專業、科技、簡潔，確保大螢幕展示清晰易讀，同時符合企業形象。
-        </p>
-        <div class="row mb-12 g-12">
-          <div class="col-6">
-            <img src="/DashBoard/SiteMap.png" alt="SiteMap" class="img-fluid" />
-          </div>
-          <div class="col-6">
-            <img src="/DashBoard/VisualDirection.png" alt="VisualDirection" class="img-fluid" />
-          </div>
-        </div>
-      </section>
+      <DesignSystem
+        text="資訊與視覺方向"
+        content=" 以 國家為層級、台灣細分事業體，視覺風格強調
+          專業、科技、簡潔，確保大螢幕展示清晰易讀，同時符合企業形象。"
+        img-url1="DashBoard/SiteMap.png"
+        alt1="img1"
+        img-url2="DashBoard/VisualDirection.png"
+        alt2="img2"
+      />
       <hr class="my-12" />
       <DesignSystem
         content="設計系統以 深色背景 為主，搭配企業品牌的 藍色與綠色，營造出 專業且具科技感 的氛圍。"
@@ -170,7 +164,14 @@
   <ResultSection
     content="這次的能源戰情牆專案讓我能思考如何在大型拼接螢幕上有效呈現龐雜資訊，同時兼顧視覺美感與品牌一致性。透過 Bento Design 模組化思維讓內容具備高度彈性，不僅解決了多螢幕展示的挑戰，也為未來延伸至不同裝置或展示場域打下基礎。也在這個專案中體會到設計在資訊整合與品牌價值傳遞上的關鍵角色。"
   />
-  <OthersWorkSection img-url1="" alt1="" img-url2="" alt2="" />
+  <OthersWorkSection
+    img-url1="Work_Overview/ChargingStationDSSDesign.jpg"
+    alt1="ChargingStationDSSDesign"
+    route1="/work/chargingStation"
+    img-url2="Work_Overview/PlatformRedesign.jpg"
+    alt2="PlatformRedesign"
+    route2="/work/platformRedesign"
+  />
 </template>
 
 <style scoped>

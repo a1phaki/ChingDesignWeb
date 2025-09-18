@@ -68,7 +68,7 @@ import { RouterLink } from 'vue-router'
           </RouterLink>
         </div>
         <div class="col-6">
-          <RouterLink to="/work/lineLiff" class="text-decoration-none">
+          <RouterLink to="/work/platformRedesign" class="text-decoration-none">
             <img
               src="/Work_Overview/PlatformRedesign.jpg"
               alt="work-img-4"

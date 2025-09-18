@@ -5,6 +5,7 @@ import WorkView from '../views/WorkView.vue'
 import LineLiffView from '../views/LineLiffView.vue'
 import CharingStationView from '@/views/ChargingStationView.vue'
 import CommandCenterDashboardView from '@/views/CommandCenterDashboardView.vue'
+import PlatformRedesignView from '@/views/PlatformRedesignView.vue'
 
 const router = createRouter({
   history: createWebHashHistory(import.meta.env.BASE_URL),
@@ -35,11 +36,23 @@ const router = createRouter({
       component: CharingStationView,
     },
     {
-      path: '/work/CommandCenterDashboard',
-      name: 'work-CommandCenterDashboard',
+      path: '/work/commandCenterDashboard',
+      name: 'work-commandCenterDashboard',
       component: CommandCenterDashboardView,
     },
+    {
+      path: '/work/platformRedesign',
+      name: 'work-platformRedesign',
+      component: PlatformRedesignView,
+    },
   ],
+  scrollBehavior(to, from, savedPosition) {
+    if (savedPosition) {
+      return savedPosition
+    } else {
+      return { top: 0, behavior: 'smooth' }
+    }
+  },
 })
 
 export default router

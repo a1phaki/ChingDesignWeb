@@ -384,7 +384,14 @@
   <ResultSection
     content="透過本專案，我將複雜的數據分析流程轉化為直觀的介面體驗，幫助業務在更短時間內完成選址評估。雖然過程中面臨資料顯示限制與色彩規劃挑戰，但最終透過合理的資訊分層與品牌化設計，成功打造出一套兼具專業與易用性的決策輔助工具。這次經驗也讓我更深刻理解如何在數據密集的情境下，透過 UI/UX 設計提升資訊可讀性與決策效率。"
   />
-  <OthersWorkSection img-url1="" alt1="" img-url2="" alt2="" />
+  <OthersWorkSection
+    img-url1="Work_Overview/LINELiff.jpg"
+    alt1="LINELiff"
+    route1="/work/LINELiff"
+    img-url2="Work_Overview/CommandCenterDashboard.jpg"
+    alt2="CommandCenterDashboard"
+    route2="/work/commandCenterDashboard"
+  />
 </template>
 
 <style scoped>

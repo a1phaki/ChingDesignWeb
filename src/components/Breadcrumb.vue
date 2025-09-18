@@ -15,6 +15,8 @@ const getPath = (index) => {
 const pathChineseMap = {
   lineLiff: '星舟快充 LINE Liff 設計',
   chargingStation: '智慧開電選址系統',
+  commandCenterDashboard: '能源戰情系統展示牆',
+  platformRedesign: '綠電平台視覺與架構優化',
 }
 
 watch(

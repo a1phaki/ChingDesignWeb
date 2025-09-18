@@ -1,6 +1,6 @@
 <template>
   <section>
-    <BaseDot text="問題定義" class="pb-4" />
+    <BaseDot :text="props.title" class="pb-4" />
     <p class="pb-12 mb-0">
       {{ props.content }}
     </p>
@@ -22,6 +22,7 @@
 import BaseDot from '@/components/Dot.vue'
 import QuestionDefineCard from './QuestionDefineCard.vue'
 const props = defineProps({
+  title: { type: String, required: true, default: '問題定義' },
   questions: {
     type: Array,
     required: true,

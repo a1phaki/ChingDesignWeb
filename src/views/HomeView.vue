@@ -23,20 +23,23 @@ import { RouterLink } from 'vue-router'
                 class="content-text d-flex flex-column justify-content-center align-items-center h-100"
               >
                 <h3 class="fw-medium fs-3 text-dark pb-12 pt-4">Work</h3>
-                <CustomButton>查看更多</CustomButton>
+
+                <RouterLink to="/work">
+                  <CustomButton> 查看更多 </CustomButton>
+                </RouterLink>
               </div>
               <img src="/Home/BG_Stroke.svg" alt="背景曲線" class="img-overlay img-fluid" />
 
               <RouterLink to="/work/lineLiff">
                 <img src="/Home/Sticker_1.svg" alt="貼紙一" class="sticker-1" />
               </RouterLink>
-              <RouterLink to="/work/lineLiff">
+              <RouterLink to="/work/chargingStation">
                 <img src="/Home/Sticker_2.svg" alt="貼紙二" class="sticker-2" />
               </RouterLink>
-              <RouterLink to="/work/lineLiff">
+              <RouterLink to="/work/commandCenterDashboard">
                 <img src="/Home/Sticker_3.svg" alt="貼紙三" class="sticker-3" />
               </RouterLink>
-              <RouterLink to="/work/lineLiff">
+              <RouterLink to="/work/platformRedesign">
                 <img src="/Home/Sticker_4.svg" alt="貼紙四" class="sticker-4" />
               </RouterLink>
             </div>
