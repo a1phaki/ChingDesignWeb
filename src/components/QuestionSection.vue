@@ -5,13 +5,14 @@
       {{ props.content }}
     </p>
     <div class="row gy-8 gx-16">
-      <div v-for="question in props.questions" :key="question.num" class="col-6 d-flex">
+      <div v-for="question in props.questions" :key="question.num" class="col-12 col-lg-6 d-flex">
         <QuestionDefineCard
           :title="question.title"
           :content="question.content"
           :num="question.num"
           :img-url="question.img"
           :alt="question.alt"
+          :size="question.size"
         />
       </div>
     </div>
@@ -33,7 +34,8 @@ const props = defineProps({
           'content' in question &&
           'num' in question &&
           'img' in question &&
-          'alt' in question,
+          'alt' in question &&
+          'size' in question,
       )
     },
   },

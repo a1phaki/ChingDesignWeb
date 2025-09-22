@@ -5,41 +5,72 @@
         <div class="card-title pb-10 mb-0">
           <span
             class="step-number fw-bold d-inline-flex justify-content-center align-items-center rounded-circle bg-success text-white lh-140"
-            >{{ props.num }}</span
           >
+            {{ num }}
+          </span>
           <h4 class="d-inline-block ps-4 text-success fw-bold lh-140 fs-9">
-            {{ props.title }}
+            {{ title }}
           </h4>
         </div>
-        <p class="card-text lh-base">{{ props.content }}</p>
+        <p class="card-text lh-base">{{ content }}</p>
       </div>
-      <div class="col-5">
-        <img :src="imgUrl" :alt="alt" class="img-fluid rounded-3 bg-white custom-img" />
+
+      <div class="col-5 d-flex">
+        <div class="bg-white rounded-3 d-flex justify-content-center align-items-center w-100">
+          <img :src="imgUrl" :alt="alt" :class="['problem-img', sizeClass]" class="rounded-3" />
+        </div>
       </div>
     </div>
   </div>
 </template>
 
 <script setup>
+import { computed } from 'vue'
+
 const props = defineProps({
-  title: { type: String, required: true },
-  content: { type: String, required: true },
-  num: { type: String, required: true },
-  imgUrl: { type: String, required: true },
-  alt: { type: String, default: 'image' },
+  num: Number,
+  title: String,
+  content: String,
+  imgUrl: String,
+  alt: String,
+  size: {
+    type: String,
+    default: 'normal', // normal | small | large
+    validator: (val) => ['normal', 'small', 'large'].includes(val),
+  },
+})
+
+const sizeClass = computed(() => {
+  return {
+    'small-img': props.size === 'small',
+    'large-img': props.size === 'large',
+  }
 })
 </script>
 
 <style scoped>
-.problem-card {
-  border-radius: 12px;
+.problem-card .col-5 > div {
+  height: 100%;
 }
 .step-number {
   width: 28px;
   height: 28px;
 }
-.custom-img {
-  width: 200px;
-  height: 168px;
+.problem-img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+.problem-img.small-img {
+  max-width: 70%;
+  max-height: 70%;
+}
+
+.problem-img.large-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* 填滿容器，高度貼合 */
 }
 </style>

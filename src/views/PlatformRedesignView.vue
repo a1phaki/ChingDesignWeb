@@ -25,7 +25,7 @@
       <hr class="my-12" />
       <QuestionSection
         title="現有痛點"
-        content="業務在選址時需跨多平台整理分散資料，流程繁瑣且耗時。系統設計目標是整合數據、提供自動評分，並以地圖與圖層篩選提升分析效率。"
+        content="現有系統痛點包含：操作路徑不清晰、角色與任務定位模糊、流程缺乏指引，以及錯誤回饋不足，導致使用者容易迷失並增加操作成本。"
         :questions="questionDefineQuestions"
       />
       <div class="d-flex justify-content-center align-items-center my-12">
@@ -35,52 +35,58 @@
       <div class="row mb-12">
         <div class="col-4 d-flex">
           <div class="card bg-warning border-1 w-100">
-            <div class="card-body p-8 d-flex align-items-center w-100">
-              <span
-                class="stepNumber fw-bold d-inline-flex justify-content-center align-items-center rounded-circle bg-success text-white lh-170"
+            <div class="card-body p-8 w-100">
+              <div
+                class="d-flex align-items-center justify-content-center border-bottom border-1 border-secondary pb-4"
               >
-                01
-              </span>
-              <h4
-                class="fw-medium lh-170 text-success fs-9 mb-0 ms-3 border-end border-1 pe-4 me-4 border-secondary"
-              >
-                資訊架構
-              </h4>
-              <p class="mb-0">位置固定 + 色彩區分</p>
+                <span
+                  class="stepNumber fw-bold d-inline-flex justify-content-center align-items-center rounded-circle bg-success text-white lh-170"
+                >
+                  01
+                </span>
+                <h4 class="fw-medium lh-170 text-success fs-9 mb-0 ms-3">資訊架構</h4>
+              </div>
+              <div class="pt-4 text-center">
+                <p class="mb-0 lh-170">固定功能位置與色彩區分，幫助快速定位</p>
+              </div>
             </div>
           </div>
         </div>
         <div class="col-4 d-flex">
           <div class="card bg-warning border-1 w-100">
-            <div class="card-body p-8 d-flex align-items-center">
-              <span
-                class="stepNumber fw-bold d-inline-flex justify-content-center align-items-center rounded-circle bg-success text-white lh-170"
+            <div class="card-body p-8 w-100">
+              <div
+                class="d-flex align-items-center justify-content-center border-bottom border-1 border-secondary pb-4"
               >
-                02
-              </span>
-              <h4
-                class="fw-medium lh-170 text-success fs-9 mb-0 ms-3 border-end border-1 pe-4 me-4 border-secondary"
-              >
-                操作體驗
-              </h4>
-              <p class="mb-0">減少資訊量，強化引導</p>
+                <span
+                  class="stepNumber fw-bold d-inline-flex justify-content-center align-items-center rounded-circle bg-success text-white lh-170"
+                >
+                  02
+                </span>
+                <h4 class="fw-medium lh-170 text-success fs-9 mb-0 ms-3">操作體驗優化</h4>
+              </div>
+              <div class="pt-4 text-center">
+                <p class="mb-0 lh-170">減少資訊負擔，加入明確引導</p>
+              </div>
             </div>
           </div>
         </div>
         <div class="col-4 d-flex">
           <div class="card bg-warning border-1 w-100">
-            <div class="card-body p-8 d-flex align-items-center">
-              <span
-                class="stepNumber fw-bold d-inline-flex justify-content-center align-items-center rounded-circle bg-success text-white lh-170"
+            <div class="card-body p-8 w-100">
+              <div
+                class="d-flex align-items-center justify-content-center border-bottom border-1 border-secondary pb-4"
               >
-                03
-              </span>
-              <h4
-                class="fw-medium lh-170 text-success fs-9 mb-0 ms-3 border-end border-1 pe-4 me-4 border-secondary"
-              >
-                跨平台整合
-              </h4>
-              <p class="mb-0">建立統一設計系統</p>
+                <span
+                  class="stepNumber fw-bold d-inline-flex justify-content-center align-items-center rounded-circle bg-success text-white lh-170"
+                >
+                  03
+                </span>
+                <h4 class="fw-medium lh-170 text-success fs-9 mb-0 ms-3">跨平台一致</h4>
+              </div>
+              <div class="pt-4 text-center">
+                <p class="mb-0 lh-170">統一設計系統，支持未來延展</p>
+              </div>
             </div>
           </div>
         </div>
@@ -288,6 +294,7 @@ const questionDefineQuestions = [
     content: '平台資料龐大，導致使用者容易迷失在操作流程中，很難快速完成任務。',
     img: 'PlatformRedesign/problem1.png',
     alt: 'problem1',
+    size: 'large',
   },
   {
     num: '2',
@@ -309,6 +316,7 @@ const questionDefineQuestions = [
     content: '操作失敗時，系統不一定能指出缺漏或錯誤原因，增加挫折與時間成本。',
     img: 'PlatformRedesign/problem4.png',
     alt: 'problem4',
+    size: 'small',
   },
 ]
 </script>
