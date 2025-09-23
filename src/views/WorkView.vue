@@ -3,7 +3,11 @@ import { RouterLink } from 'vue-router'
 </script>
 
 <template>
-  <div class="fixed-bg"></div>
+  <div class="fixed-bg">
+    <video autoplay muted loop playsinline>
+      <source src="/Home/BG_video.webm" type="video/webm" />
+    </video>
+  </div>
   <section class="relative">
     <div class="container">
       <h2 class="text-dark h1 pb-8 mb-0 fw-medium pt-8">Work</h2>
@@ -101,12 +105,15 @@ import { RouterLink } from 'vue-router'
   left: 0;
   width: 100vw;
   height: 100vh;
-  background-image: url('/Home/BG_Image.svg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
   z-index: 0;
-  pointer-events: none;
+  pointer-events: none; /* 不影響點擊 */
+  overflow: hidden;
+}
+
+.fixed-bg video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* 等效於 background-size: cover */
 }
 .relative {
   position: relative;

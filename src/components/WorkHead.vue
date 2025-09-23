@@ -1,5 +1,10 @@
 <template>
   <div class="head bg-danger background">
+    <div class="fixed-bg">
+      <video autoplay muted loop playsinline>
+        <source src="/Home/BG_video.webm" type="video/webm" />
+      </video>
+    </div>
     <div class="container">
       <div>
         <h2 class="text-dark h1 pb-8 mb-0 fw-medium">Work</h2>
@@ -37,6 +42,22 @@ const props = defineProps({
 </script>
 
 <style scoped>
+.fixed-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  pointer-events: none; /* 不影響點擊 */
+  overflow: hidden;
+}
+
+.fixed-bg video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* 等效於 background-size: cover */
+}
 h3 {
   font-size: 36px;
 }
