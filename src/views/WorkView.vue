@@ -8,7 +8,7 @@ import { RouterLink } from 'vue-router'
       <source src="/Home/BG_video.webm" type="video/webm" />
     </video>
   </div>
-  <section class="relative">
+  <section class="relative background">
     <div class="container">
       <h2 class="text-dark h1 pb-8 mb-0 fw-medium pt-8">Work</h2>
       <div class="row g-16">
@@ -112,13 +112,13 @@ import { RouterLink } from 'vue-router'
 
 .fixed-bg video {
   width: 100%;
-  height: 100%;
+  height: 90%;
   object-fit: cover; /* 等效於 background-size: cover */
 }
 .relative {
   position: relative;
   z-index: 10;
-  margin-bottom: 148px;
+  padding-bottom: 148px;
 }
 .button {
   border-radius: 100px;

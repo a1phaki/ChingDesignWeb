@@ -4,7 +4,7 @@ import { RouterLink } from 'vue-router'
 </script>
 
 <template>
-  <div class="page-wrapper">
+  <div class="page-wrapper background">
     <!-- 固定背景圖 -->
     <div class="fixed-bg">
       <video autoplay muted loop playsinline>
@@ -95,7 +95,7 @@ import { RouterLink } from 'vue-router'
 
 .fixed-bg video {
   width: 100%;
-  height: 100%;
+  height: 90%;
   object-fit: cover; /* 等效於 background-size: cover */
 }
 /* 整區撐滿視窗 */

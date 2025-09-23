@@ -54,8 +54,8 @@ const props = defineProps({
 }
 
 .fixed-bg video {
-  width: 100%;
-  height: 100%;
+  width: 90%;
+  height: 90%;
   object-fit: cover; /* 等效於 background-size: cover */
 }
 h3 {
