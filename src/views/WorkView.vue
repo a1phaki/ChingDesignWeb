@@ -97,7 +97,7 @@ import { RouterLink } from 'vue-router'
   </section>
 </template>
 
-<style>
+<style scoped>
 /* 固定背景圖層 */
 .fixed-bg {
   position: fixed;

@@ -1,5 +1,5 @@
 <template>
-  <section class="others bg-info">
+  <section class="others" :class="bgClass">
     <div class="container row">
       <div class="col-2">
         <div class="d-flex pb-16">
@@ -14,12 +14,12 @@
       <div class="col-10 row">
         <div class="col-6">
           <RouterLink :to="route1">
-            <img :src="imgUrl1" :alt="alt1" class="img-fluid img-others bg-success" />
+            <img :src="imgUrl1" :alt="alt1" class="img-fluid img-others" />
           </RouterLink>
         </div>
         <div class="col-6">
           <RouterLink :to="route2">
-            <img :src="imgUrl2" :alt="alt2" class="img-fluid img-others bg-success" />
+            <img :src="imgUrl2" :alt="alt2" class="img-fluid img-others" />
           </RouterLink>
         </div>
       </div>
@@ -30,6 +30,7 @@
 <script setup>
 import CustomButton from '@/components/Button.vue'
 import { RouterLink } from 'vue-router'
+
 defineProps({
   imgUrl1: { type: String, required: true },
   alt1: { type: String, default: 'image1' },
@@ -37,6 +38,7 @@ defineProps({
   imgUrl2: { type: String, required: true },
   alt2: { type: String, default: 'image2' },
   route2: { type: String, required: true },
+  bgClass: { type: [String, Array, Object], default: 'bg-info' }, // 👉 新增背景 class 控制
 })
 </script>
 

@@ -6,7 +6,7 @@ import { RouterLink } from 'vue-router'
 <template>
   <div class="page-wrapper background">
     <!-- 固定背景圖 -->
-    <div class="fixed-bg">
+    <div class="fixed-bg d-flex justify-content-center align-items-center">
       <video autoplay muted loop playsinline>
         <source src="/Home/BG_video.webm" type="video/webm" />
       </video>
@@ -94,9 +94,9 @@ import { RouterLink } from 'vue-router'
 }
 
 .fixed-bg video {
-  width: 100%;
-  height: 90%;
-  object-fit: cover; /* 等效於 background-size: cover */
+  width: 90%;
+  height: 100%;
+  overflow: visible;
 }
 /* 整區撐滿視窗 */
 .full-height-section {
