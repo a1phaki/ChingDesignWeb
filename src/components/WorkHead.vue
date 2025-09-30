@@ -1,9 +1,10 @@
 <template>
   <div class="head bg-danger background">
-    <div class="fixed-bg">
-      <video autoplay muted loop playsinline>
-        <source src="/Home/BG_video.webm" type="video/webm" />
-      </video>
+    <div class="fixed-icon-1">
+      <img src="/Profile/BG.png" alt="icon-1" />
+    </div>
+    <div class="fixed-icon-2">
+      <img src="/Profile/BG.png" alt="icon-2" />
     </div>
     <div class="container">
       <div>
@@ -42,22 +43,44 @@ const props = defineProps({
 </script>
 
 <style scoped>
-.fixed-bg {
+.fixed-icon-1 {
   position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
+  bottom: -15%;
+  left: -5%;
   z-index: -1;
   pointer-events: none; /* 不影響點擊 */
-  overflow: hidden;
 }
 
-.fixed-bg video {
-  width: 85%;
-  height: 100%;
-  overflow: visible;
+.fixed-icon-1 img {
+  width: 40%;
+  animation: floatUpDown 2s infinite;
 }
+
+.fixed-icon-2 {
+  position: fixed;
+  top: 5%;
+  right: -40%;
+  z-index: -1;
+  pointer-events: none; /* 不影響點擊 */
+}
+
+.fixed-icon-2 img {
+  width: 50%;
+  animation: floatUpDown 3s infinite;
+}
+
+@keyframes floatUpDown {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
 h3 {
   font-size: 36px;
 }

@@ -1,6 +1,7 @@
 <script setup>
 import BaseDot from '@/components/Dot.vue'
 import OthersWorkSection from '@/components/OthersWorkSection.vue'
+import { onMounted, onUnmounted } from 'vue'
 
 const workExperience = [
   {
@@ -85,6 +86,27 @@ const designTools = [
     usage: '簡易動畫製作',
   },
 ]
+
+const handleScroll = () => {
+  const scrollY = window.scrollY
+  const icon1 = document.querySelector('.fixed-icon-1')
+  const icon2 = document.querySelector('.fixed-icon-2')
+
+  if (icon1) {
+    icon1.style.transform = `translateY(${scrollY * -0.5}px)` // 速度 0.2
+  }
+  if (icon2) {
+    icon2.style.transform = `translateY(${scrollY * 0.4}px)` // 速度 0.4
+  }
+}
+
+onMounted(() => {
+  window.addEventListener('scroll', handleScroll)
+})
+
+onUnmounted(() => {
+  window.removeEventListener('scroll', handleScroll)
+})
 </script>
 
 <template>
@@ -92,6 +114,12 @@ const designTools = [
     <img src="/Profile/BG.png" alt="BG" />
   </div> -->
   <div class="relative background">
+    <div class="fixed-icon-1">
+      <img src="/Profile/BG.png" alt="icon-1" />
+    </div>
+    <div class="fixed-icon-2">
+      <img src="/Profile/BG.png" alt="icon-2" />
+    </div>
     <div class="container">
       <h2 class="text-dark h1 pb-8 mb-0 fw-medium pt-8">Profile</h2>
       <div class="row m-16">
@@ -192,16 +220,37 @@ const designTools = [
 </template>
 
 <style scoped>
-.fixed-bg {
-  position: fixed;
+.fixed-icon-1 {
+  position: absolute;
   top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
+  right: -10%;
   z-index: 0;
   pointer-events: none; /* 不影響點擊 */
   overflow: hidden;
 }
+
+.fixed-icon-1 img {
+  width: 40%;
+}
+
+.fixed-icon-2 {
+  position: absolute;
+  bottom: 7%;
+  right: -45%;
+  z-index: 0;
+  pointer-events: none; /* 不影響點擊 */
+  overflow: hidden;
+}
+
+.fixed-icon-2 img {
+  width: 30%;
+}
+.fixed-icon-1,
+.fixed-icon-2 {
+  will-change: transform;
+  transition: transform 0.05s linear;
+}
+
 .text-custom {
   color: #8f91a2;
 }
