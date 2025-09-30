@@ -6,7 +6,7 @@ import { RouterLink } from 'vue-router'
 <template>
   <div class="page-wrapper background">
     <!-- 固定背景圖 -->
-    <div class="fixed-bg d-flex justify-content-center align-items-center">
+    <div class="fixed-bg d-flex justify-content-start align-items-center">
       <video autoplay muted loop playsinline>
         <source src="/Home/BG_video.webm" type="video/webm" />
       </video>
@@ -61,7 +61,7 @@ import { RouterLink } from 'vue-router'
                   <hr />
                   <p>
                     目前是一位 UI/UX
-                    設計師，擅長設計網站的介面樣式，能把抽象的需求轉成清楚好讀的網頁畫面，嘗試在限制中找到合適的解法。
+                    設計師，擅長將抽象需求轉化為具體的互動流程與介面設計，能兼顧使用體驗與視覺表現，並在限制中找到符合產品定位的解法。
                   </p>
                 </div>
               </div>
@@ -94,7 +94,7 @@ import { RouterLink } from 'vue-router'
 }
 
 .fixed-bg video {
-  width: 90%;
+  width: 85%;
   height: 100%;
   overflow: visible;
 }

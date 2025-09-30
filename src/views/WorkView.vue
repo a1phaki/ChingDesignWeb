@@ -5,7 +5,7 @@ import { RouterLink } from 'vue-router'
 <template>
   <div class="fixed-bg">
     <video autoplay muted loop playsinline>
-      <source src="/Home/BG_video.webm" type="video/webm" />
+      <source src="/Globe/BG_Video_simple.webm" type="video/webm" />
     </video>
   </div>
   <section class="relative background">
@@ -112,7 +112,7 @@ import { RouterLink } from 'vue-router'
 
 .fixed-bg video {
   width: 100%;
-  height: 90%;
+  height: 100%;
   object-fit: cover; /* 等效於 background-size: cover */
 }
 .relative {
