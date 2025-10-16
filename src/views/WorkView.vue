@@ -28,10 +28,8 @@ onMounted(() => {
 </script>
 
 <template>
-  <div class="fixed-bg">
-    <video autoplay muted loop playsinline>
-      <source src="/Globe/BG_Video_simple.webm" type="video/webm" />
-    </video>
+  <div class="fixed-bg d-flex justify-content-start align-items-center">
+    <video ref="bgVideo" autoplay muted loop playsinline></video>
   </div>
   <section class="relative background">
     <div class="container">
