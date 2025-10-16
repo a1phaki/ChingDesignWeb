@@ -36,7 +36,7 @@
                   <p class="bg-success text-white custom-rounded fw-medium mb-0">
                     <span class="fs-8">01</span> 收集場址
                   </p>
-                  <img src="/LINELiff/mobile icon.svg" alt="mobile icon" class="my-8" />
+                  <img src="/ChargingStation/address1.svg" alt="address1" class="my-8" />
                   <p class="card-text text-center">
                     透過投標或地主提供的資料，整理出可能的候選地點
                   </p>
@@ -54,7 +54,7 @@
                   <p class="bg-success text-white custom-rounded fw-medium mb-0">
                     <span class="fs-8">02</span> 多平台查詢
                   </p>
-                  <img src="/LINELiff/mobile icon.svg" alt="mobile icon" class="my-8" />
+                  <img src="/ChargingStation/address2.svg" alt="address2" class="my-8" />
                   <p class="card-text text-center">
                     透過 Excel、Google Map 與其他報表平台，分別查看車流量、家戶數、POI 等數據。
                   </p>
@@ -72,7 +72,7 @@
                   <p class="bg-success text-white custom-rounded fw-medium mb-0">
                     <span class="fs-8">03</span> 整合與決策
                   </p>
-                  <img src="/LINELiff/mobile icon.svg" alt="mobile icon" class="my-8" />
+                  <img src="/ChargingStation/address3.svg" alt="address3" class="my-8" />
                   <p class="card-text text-center">
                     將不同來源的數據輸入 Excel，並進行整理比對，根據整理後的資料進行場址評估。
                   </p>
@@ -603,23 +603,23 @@ const targetSectionSteps = [
     title: '清晰資訊架構',
     content:
       '設計直觀的圖層與視覺化元素，有效整合多元資料，讓使用者能迅速抓住關鍵資訊，避免資訊過載。',
-    img: 'LINELiff/mobile icon.svg',
-    alt: 'mobile icon',
+    img: 'ChargingStation/designTarget1.svg',
+    alt: 'designTarget1',
   },
   {
     stepNum: '02',
     title: '動態資料呈現策略',
     content: '根據地圖縮放層級，精準定義與切換不同粒度資料，確保資訊在各層級皆清晰且易於理解。',
-    img: 'LINELiff/DesignSystem icon.svg',
-    alt: 'Design System icon',
+    img: 'ChargingStation/designTarget2.svg',
+    alt: 'designTarget2',
   },
   {
     stepNum: '03',
     title: '流程簡化與整合',
     content:
       '將多重資料與地圖功能整合於單一介面，統一資料來源。簡化操作流程，節省評估時間並提升選址精準度。',
-    img: 'LINELiff/task icon.svg',
-    alt: 'task icon',
+    img: 'ChargingStation/designTarget3.svg',
+    alt: 'designTarget3',
   },
 ]
 
