@@ -1,5 +1,30 @@
 <script setup>
 import { RouterLink } from 'vue-router'
+import { ref, onMounted } from 'vue'
+
+const bgVideo = ref(null)
+
+onMounted(() => {
+  const video = bgVideo.value
+  if (!video) return
+
+  // 判斷是否為 iOS
+  const ua = navigator.userAgent
+  const isIOS = /iPad|iPhone|iPod/.test(ua) || (ua.includes('Mac') && navigator.maxTouchPoints > 0)
+  const isSafari = /^((?!chrome|android).)*safari/i.test(ua)
+
+  // ✅ Safari 一律用 mov/mp4，其餘用 webm
+  const useMOV = isIOS || isSafari
+
+  // 動態建立 <source>
+  const source = document.createElement('source')
+  source.src = useMOV
+    ? 'Globe/SectionAnimation/iOSAnimation.mov'
+    : 'Globe/SectionAnimation/chromeAnimation.webm'
+  source.type = useMOV ? 'video/quicktime' : 'video/webm'
+
+  video.appendChild(source)
+})
 </script>
 
 <template>
@@ -111,9 +136,9 @@ import { RouterLink } from 'vue-router'
 }
 
 .fixed-bg video {
-  width: 100%;
+  width: 85%;
   height: 100%;
-  object-fit: cover; /* 等效於 background-size: cover */
+  overflow: visible;
 }
 .relative {
   position: relative;

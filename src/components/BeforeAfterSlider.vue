@@ -7,10 +7,14 @@
         <img :src="beforeImg" class="before-img" />
       </div>
 
-      <!-- 中間滑動線 -->
-      <div class="divider" :style="{ left: sliderValue + '%' }"></div>
+      <!-- 中間滑桿 -->
+      <div class="divider" :style="{ left: sliderValue + '%' }">
+        <div class="handle">
+          <span class="arrow left"></span>
+          <span class="arrow right"></span>
+        </div>
+      </div>
 
-      <!-- 滑桿透明覆蓋 -->
       <input type="range" min="0" max="100" v-model="sliderValue" class="slider" />
     </div>
   </div>
@@ -24,7 +28,6 @@ defineProps({
   afterImg: { type: String, required: true },
 })
 
-// 初始滑桿 50% 居中
 const sliderValue = ref(50)
 </script>
 
@@ -58,12 +61,11 @@ const sliderValue = ref(50)
 .before-wrapper img {
   display: block;
   width: 100%;
-  height: 100%; /* 高度填滿容器 */
+  height: 100%;
   object-fit: cover;
-  object-position: left; /* 保證從左邊開始裁切 */
 }
 
-/* 中間白線 */
+/* 白線 */
 .divider {
   position: absolute;
   top: 0;
@@ -72,6 +74,46 @@ const sliderValue = ref(50)
   background: white;
   z-index: 3;
   pointer-events: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.handle {
+  position: absolute; /* ← 改這個 */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* 讓它正中間 */
+  width: 40px;
+  height: 40px;
+  background: rgba(0, 0, 0, 0.6);
+  border: 2px solid white;
+  border-radius: 50%; /* 保證是圓 */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+  backdrop-filter: blur(4px);
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.3);
+}
+
+/* 左右箭頭 */
+.arrow {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-top: 6px solid transparent;
+  border-bottom: 6px solid transparent;
+}
+
+.arrow.left {
+  border-right: 8px solid white;
+  left: 8px;
+}
+
+.arrow.right {
+  border-left: 8px solid white;
+  right: 8px;
 }
 
 /* 滑桿透明覆蓋 */

@@ -358,8 +358,10 @@ p {
   width: 96%;
 }
 .img-position-2 {
+  width: 60%;
   position: absolute;
-  right: -10%;
+  right: -7%;
+  top: 5%;
   z-index: 1;
 }
 .img-position-3 {

@@ -93,7 +93,7 @@ const handleScroll = () => {
   const icon2 = document.querySelector('.fixed-icon-2')
 
   if (icon1) {
-    icon1.style.transform = `translateY(${scrollY * -0.5}px)` // 速度 0.2
+    icon1.style.transform = `translateY(${scrollY * -0.5}px)`
   }
   if (icon2) {
     icon2.style.transform = `translateY(${scrollY * 0.4}px)` // 速度 0.4

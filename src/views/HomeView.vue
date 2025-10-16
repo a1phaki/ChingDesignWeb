@@ -1,15 +1,60 @@
 <script setup>
 import CustomButton from '@/components/Button.vue'
 import { RouterLink } from 'vue-router'
+// import { onMounted, onBeforeUnmount, ref } from 'vue'
+import { ref, onMounted } from 'vue'
+
+const bgVideo = ref(null)
+
+onMounted(() => {
+  const video = bgVideo.value
+  if (!video) return
+
+  // 判斷是否為 iOS
+  const ua = navigator.userAgent
+  const isIOS = /iPad|iPhone|iPod/.test(ua) || (ua.includes('Mac') && navigator.maxTouchPoints > 0)
+  const isSafari = /^((?!chrome|android).)*safari/i.test(ua)
+
+  // ✅ Safari 一律用 mov/mp4，其餘用 webm
+  const useMOV = isIOS || isSafari
+
+  // 動態建立 <source>
+  const source = document.createElement('source')
+  source.src = useMOV
+    ? 'Globe/HomeAnimation/iOSAnimation.mov'
+    : 'Globe/HomeAnimation/chromeAnimation.webm'
+  source.type = useMOV ? 'video/quicktime' : 'video/webm'
+
+  video.appendChild(source)
+})
+
+// onMounted(() => {
+//   // 載入 JSON 動畫
+//   animationInstance = lottie.loadAnimation({
+//     container: lottieContainer.value,
+//     renderer: 'svg',
+//     loop: true,
+//     autoplay: true,
+//     path: 'Globe/HomeAnimation/HomeAnimation.json',
+//   })
+// })
+
+// onBeforeUnmount(() => {
+//   // 離開時銷毀動畫
+//   if (animationInstance) animationInstance.destroy()
+// })
 </script>
 
 <template>
   <div class="page-wrapper background">
+    <!-- 固定背景圖
+    <div class="fixed-bg d-flex justify-content-start align-items-center">
+      <div ref="lottieContainer" class="lottie-bg"></div>
+    </div> -->
+
     <!-- 固定背景圖 -->
     <div class="fixed-bg d-flex justify-content-start align-items-center">
-      <video autoplay muted loop playsinline>
-        <source src="/Home/BG_video.webm" type="video/webm" />
-      </video>
+      <video ref="bgVideo" autoplay muted loop playsinline></video>
     </div>
 
     <!-- 滿版內容區塊 -->
@@ -97,6 +142,13 @@ import { RouterLink } from 'vue-router'
   width: 85%;
   height: 100%;
   overflow: visible;
+}
+
+.lottie-bg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  inset: 0;
 }
 /* 整區撐滿視窗 */
 .full-height-section {
