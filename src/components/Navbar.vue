@@ -15,7 +15,9 @@ defineOptions({
       <nav class="d-flex gap-4 align-items-center">
         <RouterLink to="/profile" class="text-success text-decoration-none">Profile</RouterLink>
         <RouterLink to="/work" class="text-success text-decoration-none">Work</RouterLink>
-        <div class="btn btn-outline-success">Download Resume</div>
+        <a href="Resume.pdf" download="Ching_Resume.pdf">
+          <div class="btn btn-outline-success">Download Resume</div>
+        </a>
       </nav>
     </div>
   </header>

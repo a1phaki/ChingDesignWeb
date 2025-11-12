@@ -1,7 +1,6 @@
 <script setup>
 import CustomButton from '@/components/Button.vue'
 import { RouterLink } from 'vue-router'
-// import { onMounted, onBeforeUnmount, ref } from 'vue'
 import { ref, onMounted } from 'vue'
 
 const bgVideo = ref(null)
@@ -27,22 +26,6 @@ onMounted(() => {
 
   video.appendChild(source)
 })
-
-// onMounted(() => {
-//   // 載入 JSON 動畫
-//   animationInstance = lottie.loadAnimation({
-//     container: lottieContainer.value,
-//     renderer: 'svg',
-//     loop: true,
-//     autoplay: true,
-//     path: 'Globe/HomeAnimation/HomeAnimation.json',
-//   })
-// })
-
-// onBeforeUnmount(() => {
-//   // 離開時銷毀動畫
-//   if (animationInstance) animationInstance.destroy()
-// })
 </script>
 
 <template>
@@ -110,7 +93,9 @@ onMounted(() => {
                   </p>
                 </div>
               </div>
-              <CustomButton class="mt-12">查看更多</CustomButton>
+              <RouterLink to="/profile">
+                <CustomButton> 查看更多 </CustomButton>
+              </RouterLink>
             </div>
           </div>
         </section>
