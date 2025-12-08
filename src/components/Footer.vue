@@ -5,26 +5,31 @@ defineOptions({
 </script>
 
 <template>
-  <footer class="background border border-top-1 border-secondary bg-danger">
-    <div class="container d-flex align-items-center justify-content-between">
-      <div class="footer-text">
-        <h4 class="lh-140 fw-normal fs-9">
-          Thank You, <br />
-          Let’s make something great together!
-        </h4>
-        <p class="text-muted lh-140">CHING DESIGN ©2025. All Rights Reserved.</p>
-      </div>
-      <div class="footer-link d-flex align-items-center">
-        <a href="https://www.behance.net/chinghsuan_200028" class="pe-12">
-          <div class="icon-wrapper bg-white">
-            <img src="/Globe/Footer_Behance.svg" alt="behance-icon" class="icon-img" />
-          </div>
-        </a>
-        <a href="mailto:chinghsuan2846@gmail.com">
-          <div class="icon-wrapper bg-white">
-            <img src="/Globe/Footer_Eenvelope.svg" alt="email-icon" class="icon-img" />
-          </div>
-        </a>
+  <footer class="background border border-top-1 border-secondary bg-danger pb-16">
+    <div class="container">
+      <div class="row align-items-center justify-content-between">
+        <!-- 左側文字區 -->
+        <div class="col-md-8 col-12 footer-text">
+          <h4 class="lh-140 fw-normal fs-9">
+            Thank You, <br />
+            Let’s make something great together!
+          </h4>
+          <p class="text-muted lh-140">CHING DESIGN ©2025. All Rights Reserved.</p>
+        </div>
+
+        <!-- 右側連結區 -->
+        <div class="col-md-auto col-12 footer-link d-flex align-items-center">
+          <a href="https://www.behance.net/chinghsuan_200028" class="pe-12">
+            <div class="icon-wrapper bg-white">
+              <img src="/Globe/Footer_Behance.svg" alt="behance-icon" class="icon-img" />
+            </div>
+          </a>
+          <a href="mailto:chinghsuan2846@gmail.com">
+            <div class="icon-wrapper bg-white">
+              <img src="/Globe/Footer_Eenvelope.svg" alt="email-icon" class="icon-img" />
+            </div>
+          </a>
+        </div>
       </div>
     </div>
   </footer>
@@ -35,6 +40,11 @@ footer {
   padding: 70px 100px;
   position: relative;
   z-index: 2;
+}
+@media (max-width: 768px) {
+  footer {
+    padding: 24px 60px;
+  }
 }
 .footer-text p {
   font-size: 14px;
