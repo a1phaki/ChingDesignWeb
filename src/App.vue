@@ -7,8 +7,8 @@ import Footer from './components/Footer.vue'
 
 <template>
   <div class="bg-danger wrapper">
+    <Navbar />
     <div class="container">
-      <Navbar />
       <Breadcrumb />
     </div>
     <RouterView />

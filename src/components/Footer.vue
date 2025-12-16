@@ -8,7 +8,6 @@ defineOptions({
   <footer class="background border border-top-1 border-secondary bg-danger pb-16">
     <div class="container">
       <div class="row align-items-center justify-content-between">
-        <!-- 左側文字區 -->
         <div class="col-md-8 col-12 footer-text">
           <h4 class="lh-140 fw-normal fs-9">
             Thank You, <br />
@@ -16,8 +15,6 @@ defineOptions({
           </h4>
           <p class="text-muted lh-140">CHING DESIGN ©2025. All Rights Reserved.</p>
         </div>
-
-        <!-- 右側連結區 -->
         <div class="col-md-auto col-12 footer-link d-flex align-items-center">
           <a href="https://www.behance.net/chinghsuan_200028" class="pe-12">
             <div class="icon-wrapper bg-white">
