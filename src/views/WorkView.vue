@@ -35,7 +35,7 @@ onMounted(() => {
     <div class="container">
       <h2 class="text-dark h1 pb-8 mb-0 fw-medium pt-8">Work</h2>
       <div class="row g-16">
-        <div class="col-6">
+        <div class="col-md-6 col-12">
           <RouterLink to="/work/lineLiff" class="text-decoration-none">
             <img src="/Work_Overview/LINELiff.jpg" alt="work-img-1" class="img-fluid work-img" />
             <div class="tag pt-8" @click.stop>
@@ -46,13 +46,15 @@ onMounted(() => {
                 LINE Liff Design
               </span>
             </div>
-            <h3 class="text-success fs-8 lh-170 fw-medium py-3 m-0">星舟快充 LINE Liff 設計</h3>
+            <h3 class="text-success fs-8 lh-170 fw-medium pt-4 pb-3 m-0">
+              星舟快充 LINE Liff 設計
+            </h3>
             <p class="lh-170">
               星舟快充致力於電動車充電服務，本次改版優化 LINE 操作介面，讓使用者充電更直覺順暢。
             </p>
           </RouterLink>
         </div>
-        <div class="col-6">
+        <div class="col-md-6 col-12">
           <RouterLink to="/work/chargingStation" class="text-decoration-none">
             <img
               src="/Work_Overview/ChargingStationDSSDesign.jpg"
@@ -64,16 +66,16 @@ onMounted(() => {
                 Web
               </span>
               <span class="button border border-1 border-success text-success lh-170">
-                Charging Station DSS Design
+                DSS Design
               </span>
             </div>
-            <h3 class="text-success fs-8 lh-170 fw-medium py-3 m-0">智慧開電選址系統</h3>
+            <h3 class="text-success fs-8 lh-170 fw-medium pt-4 pb-3 m-0">智慧開電選址系統</h3>
             <p class="lh-170">
               一套企業內部的智慧選址決策系統，用於評估充電站場址的開發潛力，整合地理與商業數據，提供多維度評分分析。
             </p>
           </RouterLink>
         </div>
-        <div class="col-6">
+        <div class="col-md-6 col-12">
           <RouterLink to="/work/CommandCenterDashboard" class="text-decoration-none">
             <img
               src="/Work_Overview/CommandCenterDashboard.jpg"
@@ -85,16 +87,16 @@ onMounted(() => {
                 Cross Platform
               </span>
               <span class="button border border-1 border-success text-success lh-170">
-                Command Center Dashboard
+                Dashboard
               </span>
             </div>
-            <h3 class="text-success fs-8 lh-170 fw-medium py-3 m-0">能源戰情系統展示牆</h3>
+            <h3 class="text-success fs-8 lh-170 fw-medium pt-4 pb-3 m-0">能源戰情系統展示牆</h3>
             <p class="lh-170">
               呈現公司在亞太地區的能源佈局與營運績效，設計重點在於資訊整合與視覺化。幫助決策者快速掌握多區域數據，也可直觀展示公司營運實績與競爭優勢。
             </p>
           </RouterLink>
         </div>
-        <div class="col-6">
+        <div class="col-md-6 col-12">
           <RouterLink to="/work/platformRedesign" class="text-decoration-none">
             <img
               src="/Work_Overview/PlatformRedesign.jpg"
@@ -106,10 +108,10 @@ onMounted(() => {
                 Web
               </span>
               <span class="button border border-1 border-success text-success lh-170">
-                Platform Redesign
+                Redesign
               </span>
             </div>
-            <h3 class="text-success fs-8 lh-170 fw-medium py-3 m-0">綠電平台視覺與架構優化</h3>
+            <h3 class="text-success fs-8 lh-170 fw-medium pt-4 pb-3 m-0">綠電平台視覺與架構優化</h3>
             <p class="lh-170">
               此次改版聚焦於媒合購售電雙方的流程設計，並改善原有系統的使用痛點，重整資訊架構與介面視覺，打造更直覺、符合內部工作流程的使用體驗。
             </p>
