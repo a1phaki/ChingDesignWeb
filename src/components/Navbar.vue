@@ -1,10 +1,13 @@
 <script setup>
 import { RouterLink } from 'vue-router'
 import { ref } from 'vue'
+import { useBreakpoint } from '@/composables/useBreakpoint'
 
 defineOptions({
   name: 'AppHeader',
 })
+
+const { isXs } = useBreakpoint()
 
 const isOpen = ref(false)
 
@@ -35,7 +38,12 @@ const hideNavbar = () => {
           <RouterLink class="nav-link text-success" to="/work">Work</RouterLink>
         </div>
 
-        <a href="Resume.pdf" download="Ching_Resume.pdf" class="btn btn-outline-success">
+        <a
+          href="Resume.pdf"
+          download="Ching_Resume.pdf"
+          class="btn btn-outline-success"
+          :class="{ dNone: isXs() }"
+        >
           Download Resume
         </a>
 
@@ -52,6 +60,14 @@ const hideNavbar = () => {
             >Profile</RouterLink
           >
           <RouterLink class="nav-link text-success" to="/work" @click="hideNavbar">Work</RouterLink>
+          <a
+            v-if="isXs()"
+            href="Resume.pdf"
+            download="Ching_Resume.pdf"
+            class="btn btn-outline-success"
+          >
+            Download Resume
+          </a>
         </div>
       </div>
     </nav>
@@ -153,6 +169,9 @@ header {
   .custom-collapse {
     display: none;
   }
+}
+.dNone {
+  display: none;
 }
 
 @media (max-width: 768px) {

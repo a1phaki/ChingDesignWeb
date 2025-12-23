@@ -15,7 +15,7 @@ export function useBreakpoint() {
     window.removeEventListener('resize', onResize)
   })
 
-  const isXs = () => width.value < 375 // 0 ~ 374
+  const isXs = () => width.value < 400 // 0 ~ 374
   const isSm = () => width.value >= 375 && width.value < 768 // 375 ~ 767
   const isMd = () => width.value >= 768 && width.value < 992 // 768 ~ 991
   const isLg = () => width.value >= 992 && width.value < 1200 // 992 ~ 1199

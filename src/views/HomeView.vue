@@ -5,7 +5,7 @@ import { RouterLink } from 'vue-router'
 import { ref, onMounted } from 'vue'
 
 const bgVideo = ref(null)
-const { isSm } = useBreakpoint()
+const { isXs, isSm } = useBreakpoint()
 
 onMounted(() => {
   const video = bgVideo.value
@@ -48,7 +48,7 @@ onMounted(() => {
           </section>
           <section class="col-lg-7 offset-lg-5 col-12 p-0 py-20 col-12">
             <div class="content w-100 h-100">
-              <div v-if="isSm()" class="content-bg">
+              <div v-if="isSm() || isXs()" class="content-bg">
                 <div class="content-text d-flex flex-column align-items-center h-100">
                   <h3 class="fw-medium fs-3 text-dark pb-12 pt-11">Work</h3>
                   <div class="pb-10">
@@ -108,7 +108,7 @@ onMounted(() => {
           <section class="col-lg-7 offset-lg-5 col-12 p-0 py-20 col-12">
             <div class="content w-100 h-100">
               <div
-                v-if="isSm()"
+                v-if="isXs() || isSm()"
                 class="content-bg d-flex align-items-center justify-content-center flex-column py-16"
               >
                 <div
@@ -327,9 +327,16 @@ onMounted(() => {
 }
 @media (max-width: 768px) {
   .personal-card {
-    width: 50%; /* 手機可以撐到更寬，或者 100% */
+    width: 60%; /* 手機可以撐到更寬，或者 100% */
   }
 }
+
+@media (max-width: 520px) {
+  .personal-card {
+    width: 70%; /* 手機可以撐到更寬，或者 100% */
+  }
+}
+
 .personal-card-img {
   max-width: 170px;
   max-height: 170px;
