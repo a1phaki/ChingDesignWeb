@@ -120,13 +120,13 @@ onUnmounted(() => {
     <div class="fixed-icon-2">
       <img src="/Profile/BG.png" alt="icon-2" />
     </div>
-    <div class="container">
+    <div class="container-xl">
       <h2 class="text-dark h1 pb-8 mb-0 fw-medium pt-8">Profile</h2>
-      <div class="row m-16">
-        <div class="col-3 me-20">
-          <img src="/Profile/photo.png" alt="Profile Photo" />
+      <div class="row custom-margin">
+        <div class="col-12 col-md-4 d-flex align-items-center justify-content-center pb-4 pb-md-0">
+          <img src="/Profile/photo.png" alt="Profile Photo" class="img-size" />
         </div>
-        <div class="col-8 ms-4 d-flex flex-column justify-content-center">
+        <div class="col-12 col-md-8 d-flex flex-column justify-content-center">
           <p class="lh-170 mb-2 text-custom">UI/UX Designer</p>
           <h3 class="mb-8 text-success">徐 晴 瑄</h3>
           <p class="lh-170">
@@ -139,23 +139,30 @@ onUnmounted(() => {
       </div>
     </div>
     <div class="information bg-white">
-      <div class="container custom-padding">
+      <div class="container-xl custom-padding">
         <section class="mb-12">
           <BaseDot text="工作經歷" class="pb-8" />
           <div class="d-flex">
             <span class="side-bar"></span>
             <div class="w-100">
               <div v-for="(work, index) in workExperience" :key="index">
-                <div class="d-flex">
-                  <div class="pe-12">
-                    <img :src="work.img" :alt="`${work.company}-icon`" class="icon-img" />
+                <div class="d-md-flex">
+                  <div class="pe-12 mb-4 mb-md-0">
+                    <div class="icon-wrap">
+                      <img :src="work.img" class="icon-img" />
+                    </div>
                   </div>
                   <div class="lh-170">
                     <p>{{ work.company }}</p>
-                    <div class="d-flex">
-                      <p class="border-end border-success pe-2">{{ work.role }}</p>
-                      <p class="fw-medium ps-2">{{ work.period }}</p>
+                    <div class="d-flex flex-column flex-md-row">
+                      <p class="border-md-end border-success pe-md-2 mb-1 mb-md-0">
+                        {{ work.role }}
+                      </p>
+                      <p class="fw-medium ps-md-2">
+                        {{ work.period }}
+                      </p>
                     </div>
+
                     <ul>
                       <li v-for="(item, idx) in work.responsibilities" :key="idx" class="fw-medium">
                         {{ item.title }}：
@@ -173,18 +180,20 @@ onUnmounted(() => {
         </section>
         <section class="mb-12">
           <BaseDot text="設計專長" class="pb-12" />
-          <span class="button border border-1 border-success text-success lh-170 me-8">
-            # 介面視覺設計
-          </span>
-          <span class="button border border-1 border-success text-success lh-170 me-8">
-            # 資訊及頁面架構
-          </span>
-          <span class="button border border-1 border-success text-success lh-170 me-8">
-            # 流程規劃
-          </span>
-          <span class="button border border-1 border-success text-success lh-170 me-8">
-            # 互動/動態設計
-          </span>
+          <div class="skill-tags">
+            <span class="button border border-1 border-success text-success lh-170">
+              # 介面視覺設計
+            </span>
+            <span class="button border border-1 border-success text-success lh-170">
+              # 資訊及頁面架構
+            </span>
+            <span class="button border border-1 border-success text-success lh-170">
+              # 流程規劃
+            </span>
+            <span class="button border border-1 border-success text-success lh-170">
+              # 互動/動態設計
+            </span>
+          </div>
         </section>
         <section class="pb-8">
           <BaseDot text="軟體工具" class="pb-4" />
@@ -193,7 +202,7 @@ onUnmounted(() => {
             Illustrator 繪製插圖，Photoshop 處理影像與素材；用 After Effects 做簡易動畫，並用
             Premiere 剪輯影片。我也會靈活運用這些工具，提升設計效率並確保團隊溝通順暢。
           </p>
-          <div class="w-100 d-flex gap-8 align-items-stretch">
+          <div class="tools-grid">
             <div class="custom-width" v-for="(tool, index) in designTools" :key="index">
               <div class="custom-card bg-warning h-100">
                 <div class="d-flex justify-content-center mb-4">
@@ -251,6 +260,32 @@ onUnmounted(() => {
   transition: transform 0.05s linear;
 }
 
+img-size {
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .img-size {
+    width: 50%;
+  }
+}
+
+@media (max-width: 576px) {
+  .img-size {
+    width: 80%;
+  }
+}
+
+.custom-margin {
+  margin: 40px 80px;
+}
+
+@media (max-width: 992px) {
+  .custom-margin {
+    margin: 32px;
+  }
+}
+
 .text-custom {
   color: #8f91a2;
 }
@@ -264,20 +299,52 @@ onUnmounted(() => {
 .custom-padding {
   padding: 60px 80px;
 }
+@media (max-width: 768px) {
+  .custom-padding {
+    padding: 32px 40px;
+  }
+}
+
 .side-bar {
   display: block;
   width: 7px;
   background-color: #eaf0f6;
   margin-right: 52px;
 }
-.icon-img {
+@media (max-width: 768px) {
+  .side-bar {
+    margin-right: 40px;
+  }
+}
+.icon-wrap {
   width: 64px;
   height: 64px;
-  object-fit: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
+.icon-img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
 .button {
   border-radius: 100px;
   padding: 6px 20px;
+}
+
+.skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 16px; /* 上下 8px、左右 16px */
+}
+
+@media (max-width: 576px) {
+  .skill-tags {
+    justify-content: center;
+  }
 }
 .custom-card {
   padding: 24px;
@@ -285,7 +352,54 @@ onUnmounted(() => {
   border: 1px solid #f0f3f9;
   text-align: center;
 }
-.custom-width {
-  width: 20%;
+.tools-grid {
+  display: grid;
+  gap: 24px;
+}
+
+/* 桌機：5 個 → 各 20% */
+@media (min-width: 992px) {
+  .tools-grid {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+/* 平板：上 3（33%）、下 2（50%） */
+@media (min-width: 400.1px) and (max-width: 992px) {
+  .tools-grid {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  .tools-grid > div:nth-child(-n + 3) {
+    grid-column: span 2; /* 2 / 6 = 33% */
+  }
+
+  .tools-grid > div:nth-child(n + 4) {
+    grid-column: span 3; /* 3 / 6 = 50% */
+  }
+}
+
+/* 手機：一個一行 */
+@media (max-width: 400px) {
+  .tools-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  /* 第 1 個：滿版 */
+  .tools-grid > div:nth-child(1) {
+    grid-column: span 4;
+  }
+
+  /* 第 2、3 個：一排兩個 */
+  .tools-grid > div:nth-child(2),
+  .tools-grid > div:nth-child(3) {
+    grid-column: span 2;
+  }
+
+  /* 第 4、5 個：一排兩個 */
+  .tools-grid > div:nth-child(4),
+  .tools-grid > div:nth-child(5) {
+    grid-column: span 2;
+  }
 }
 </style>

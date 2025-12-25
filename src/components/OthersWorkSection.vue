@@ -1,26 +1,31 @@
 <template>
   <section class="others" :class="bgClass">
-    <div class="container row">
-      <div class="col-2">
-        <div class="d-flex pb-16">
-          <span class="text-bar"></span>
-          <div>
-            <p class="mb-2">感謝觀看</p>
-            <h4 class="fs-7 fw-medium text-success">查看其他作品</h4>
+    <div class="container-xl">
+      <div class="row">
+        <div class="col-12 col-lg-3 d-flex flex-column align-items-center mb-6 mb-lg-0">
+          <div class="d-flex pb-16">
+            <span class="text-bar"></span>
+            <div class="text-center text-md-start">
+              <p class="mb-2">感謝觀看</p>
+              <h4 class="fs-7 fw-medium text-success">查看其他作品</h4>
+            </div>
           </div>
+          <CustomButton>查看更多</CustomButton>
         </div>
-        <CustomButton>查看更多</CustomButton>
-      </div>
-      <div class="col-10 row">
-        <div class="col-6">
-          <RouterLink :to="route1">
-            <img :src="imgUrl1" :alt="alt1" class="img-fluid img-others" />
-          </RouterLink>
-        </div>
-        <div class="col-6">
-          <RouterLink :to="route2">
-            <img :src="imgUrl2" :alt="alt2" class="img-fluid img-others" />
-          </RouterLink>
+
+        <div class="col-12 col-lg-9">
+          <div class="row">
+            <div class="col-6">
+              <RouterLink :to="route1">
+                <img :src="imgUrl1" :alt="alt1" class="img-fluid img-others" />
+              </RouterLink>
+            </div>
+            <div class="col-6">
+              <RouterLink :to="route2">
+                <img :src="imgUrl2" :alt="alt2" class="img-fluid img-others" />
+              </RouterLink>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -49,6 +54,13 @@ defineProps({
   z-index: 10;
   padding: 100px 106px;
 }
+
+@media (max-width: 992px) {
+  .others {
+    padding: 80px 32px 100px;
+  }
+}
+
 .img-others {
   border-radius: 8px;
 }
