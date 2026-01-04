@@ -3,7 +3,7 @@
     <div class="fixed-bg d-flex justify-content-start align-items-center">
       <video ref="bgVideo" autoplay muted loop playsinline></video>
     </div>
-    <div class="container d-flex flex-column align-items-center">
+    <div class="container-xl d-flex flex-column align-items-center">
       <BaseDot text="成果後記" class="pb-4" />
       <p class="mb-0">
         {{ props.content }}
@@ -54,7 +54,11 @@ onMounted(() => {
   padding: 100px 176px;
   overflow: hidden; /* 避免影片超出 */
 }
-
+@media (max-width: 992px) {
+  .result {
+    padding: 60px 24px;
+  }
+}
 .fixed-bg {
   position: absolute;
   top: 0;

@@ -13,6 +13,7 @@
           :img-url="question.img"
           :alt="question.alt"
           :size="question.size"
+          class="w-100"
         />
       </div>
     </div>

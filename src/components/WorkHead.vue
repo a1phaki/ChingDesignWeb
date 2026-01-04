@@ -6,20 +6,20 @@
     <div class="fixed-icon-2">
       <img src="/Profile/BG.png" alt="icon-2" />
     </div>
-    <div class="container">
+    <div class="container-xl">
       <div>
         <h2 class="text-dark h1 pb-8 mb-0 fw-medium">Work</h2>
-        <div class="row g-0 justify-content-between pb-16">
-          <div class="col-4">
+        <div class="row g-5 pb-16 justify-content-between">
+          <div class="col-12 col-md-5">
             <span class="button border border-1 border-success text-success lh-170">
               {{ props.tag }}
             </span>
-            <h3 class="text-success mb-0 pt-4 fw-medium">{{ props.title }}</h3>
+            <h3 class="title text-success mb-0 pt-4 fw-medium">{{ props.title }}</h3>
             <p class="pt-16">
               {{ props.content }}
             </p>
           </div>
-          <div class="col-7">
+          <div class="col-12 col-md-7">
             <img
               :src="imgUrl"
               :alt="alt"
@@ -67,6 +67,22 @@ const props = defineProps({
 .fixed-icon-2 img {
   width: 50%;
   animation: floatUpDown 3s infinite;
+}
+
+.title {
+  font-size: 1.5rem; /* 手機 */
+}
+
+@media (min-width: 768px) {
+  .title {
+    font-size: 1.75rem; /* md */
+  }
+}
+
+@media (min-width: 992px) {
+  .title {
+    font-size: 2.25rem; /* lg */
+  }
 }
 
 @keyframes floatUpDown {

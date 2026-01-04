@@ -4,11 +4,11 @@
     <p class="pb-12 mb-0">
       {{ props.content }}
     </p>
-    <div class="row gx-12">
-      <div class="col-6">
+    <div class="row gx-12 gy-12 gy-md-0">
+      <div class="col-12 col-md-6">
         <img :src="imgUrl1" :alt="alt1" />
       </div>
-      <div class="col-6">
+      <div class="col-12 col-md-6">
         <img :src="imgUrl2" :alt="alt2" />
       </div>
     </div>

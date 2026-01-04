@@ -1,7 +1,7 @@
 <template>
   <div class="card border-0 bg-warning problem-card">
     <div class="card-body p-8 row g-12 justify-content-between">
-      <div class="col-7">
+      <div class="col-12 col-md-7">
         <div class="card-title pb-10 mb-0">
           <span
             class="step-number fw-bold d-inline-flex justify-content-center align-items-center rounded-circle bg-success text-white lh-140"
@@ -15,8 +15,8 @@
         <p class="card-text lh-base">{{ content }}</p>
       </div>
 
-      <div class="col-5 d-flex">
-        <div class="bg-white rounded-3 d-flex justify-content-center align-items-center w-100">
+      <div class="col-12 col-md-5 d-flex">
+        <div class="rounded-3 d-flex justify-content-center align-items-center w-100">
           <img :src="imgUrl" :alt="alt" :class="['problem-img', sizeClass]" class="rounded-3" />
         </div>
       </div>

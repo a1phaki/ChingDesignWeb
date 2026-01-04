@@ -2,7 +2,7 @@
   <section>
     <BaseDot text="設計目標" class="pb-12" />
     <div class="row g-12">
-      <div v-for="step in props.steps" :key="step.num" class="col-4 d-flex">
+      <div v-for="step in props.steps" :key="step.num" class="col-12 col-md-4 d-flex">
         <TargetCardStep
           :title="step.title"
           :content="step.content"

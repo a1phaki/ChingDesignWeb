@@ -1,6 +1,6 @@
 <template>
   <section class="row g-0 justify-content-between">
-    <div class="col-6">
+    <div class="col-12 col-md-6">
       <BaseDot text="專案挑戰" class="pb-12" />
       <div class="d-flex">
         <span class="side-bar"></span>
@@ -14,7 +14,7 @@
         </div>
       </div>
     </div>
-    <div class="col-6">
+    <div class="col-12 col-md-6 pt-8 pt-md-0">
       <img :src="imgUrl" :alt="alt" class="img-fluid img-padding" />
     </div>
   </section>
@@ -45,5 +45,12 @@ const props = defineProps({
 .img-padding {
   padding-left: 80px;
   object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .img-padding {
+    padding-left: 40px;
+    object-fit: contain;
+  }
 }
 </style>
