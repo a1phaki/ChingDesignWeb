@@ -7,7 +7,7 @@
     alt="titleImg"
   />
   <div class="information bg-white">
-    <div class="container custom-padding">
+    <div class="container-xl custom-padding">
       <ProjectInformation
         role="UI/UX 設計師"
         project-duration="2 個月"

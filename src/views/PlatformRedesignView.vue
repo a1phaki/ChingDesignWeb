@@ -7,7 +7,7 @@
     alt="titleImg"
   />
   <div class="information bg-white">
-    <div class="container custom-padding">
+    <div class="container-xl custom-padding">
       <ProjectInformation
         role="UI/UX 設計師"
         project-duration="2 個月"
@@ -32,8 +32,8 @@
         <img src="/PlatformRedesign/arrow.svg" alt="arrow" />
       </div>
       <BaseDot text="優化目標" class="pb-4" />
-      <div class="row mb-12">
-        <div class="col-4 d-flex">
+      <div class="row mb-12 g-4">
+        <div class="col-12 col-md-4 d-flex">
           <div class="card bg-warning border-1 w-100">
             <div class="card-body p-8 w-100">
               <div
@@ -52,7 +52,7 @@
             </div>
           </div>
         </div>
-        <div class="col-4 d-flex">
+        <div class="col-12 col-md-4 d-flex">
           <div class="card bg-warning border-1 w-100">
             <div class="card-body p-8 w-100">
               <div
@@ -71,7 +71,7 @@
             </div>
           </div>
         </div>
-        <div class="col-4 d-flex">
+        <div class="col-12 col-md-4 d-flex">
           <div class="card bg-warning border-1 w-100">
             <div class="card-body p-8 w-100">
               <div

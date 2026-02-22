@@ -7,7 +7,7 @@
     alt="titleImg"
   />
   <div class="information bg-white">
-    <div class="container custom-padding">
+    <div class="container-xl custom-padding">
       <ProjectInformation
         role="UI/UX 設計師"
         project-duration="4 個月"
@@ -28,8 +28,9 @@
         <p class="pb-12">
           觀察業務選址流程後，發現資料分散且操作繁複。因此將設計重點放在資料整合、可視化呈現與圖層篩選功能，提升使用效率與決策便利性。
         </p>
-        <div class="row justify-content-between g-0">
-          <div class="col-3 d-flex">
+
+        <div class="d-flex flex-column flex-lg-row justify-content-between align-items-center g-0">
+          <div class="col-12 col-lg-3">
             <div class="card bg-warning border-1 border-light">
               <div class="card-body p-8">
                 <div class="d-flex flex-column align-items-center">
@@ -44,10 +45,12 @@
               </div>
             </div>
           </div>
-          <div class="col-1 d-flex justify-content-center">
-            <img src="/LINELiff/Arrow.svg" alt="箭頭" />
+
+          <div class="col-12 col-lg-1 d-flex justify-content-center py-4 py-lg-0">
+            <img src="/LINELiff/Arrow.svg" alt="箭頭" class="rotate-mobile" />
           </div>
-          <div class="col-3 d-flex">
+
+          <div class="col-12 col-lg-3">
             <div class="card bg-warning border-1 border-light">
               <div class="card-body p-8">
                 <div class="d-flex flex-column align-items-center">
@@ -56,16 +59,18 @@
                   </p>
                   <img src="/ChargingStation/address2.svg" alt="address2" class="my-8" />
                   <p class="card-text text-center">
-                    透過 Excel、Google Map 與其他報表平台，分別查看車流量、家戶數、POI 等數據。
+                    透過 Excel、Google Map 與其他報表平台，分別查看數據。
                   </p>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-1 d-flex justify-content-center">
-            <img src="/LINELiff/Arrow.svg" alt="箭頭" />
+
+          <div class="col-12 col-lg-1 d-flex justify-content-center py-4 py-lg-0">
+            <img src="/LINELiff/Arrow.svg" alt="箭頭" class="rotate-mobile" />
           </div>
-          <div class="col-3 d-flex">
+
+          <div class="col-12 col-lg-3">
             <div class="card bg-warning border-1 border-light">
               <div class="card-body p-8">
                 <div class="d-flex flex-column align-items-center">
@@ -73,9 +78,7 @@
                     <span class="fs-8">03</span> 整合與決策
                   </p>
                   <img src="/ChargingStation/address3.svg" alt="address3" class="my-8" />
-                  <p class="card-text text-center">
-                    將不同來源的數據輸入 Excel，並進行整理比對，根據整理後的資料進行場址評估。
-                  </p>
+                  <p class="card-text text-center">將不同來源數據輸入 Excel 並進行場址評估。</p>
                 </div>
               </div>
             </div>
@@ -91,55 +94,68 @@
       <section>
         <BaseDot text="需求與功能優先級分類" class="pb-4" />
         <p class="pb-4">初步規劃系統的三大功能基礎，為後續設計提供方向。</p>
-        <div class="row mb-12">
-          <div class="col-4 d-flex">
+        <div class="row g-4 mb-12">
+          <div class="col-12 col-md-4 d-flex">
             <div class="card bg-warning border-1 w-100">
-              <div class="card-body p-8 d-flex align-items-center w-100">
-                <span
-                  class="stepNumber fw-bold d-inline-flex justify-content-center align-items-center rounded-circle bg-success text-white lh-170"
+              <div
+                class="card-body p-8 d-flex flex-row flex-md-column flex-lg-row align-items-center w-100"
+              >
+                <div
+                  class="d-flex align-items-center flex-shrink-0 border-end border-md-bottom border-lg-end border-secondary pe-4 me-4 pe-md-0 me-md-0 pe-lg-4 me-lg-4 pb-0 mb-0 pb-md-3 mb-md-3 pb-lg-0 mb-lg-0"
                 >
-                  01
-                </span>
-                <h4
-                  class="fw-medium lh-170 text-success fs-9 mb-0 ms-3 border-end border-1 pe-4 me-4 border-secondary"
-                >
-                  場址輸入
-                </h4>
-                <p class="mb-0">收集整理場址相關資訊</p>
+                  <span
+                    class="stepNumber fw-bold d-inline-flex justify-content-center align-items-center rounded-circle bg-success text-white lh-170 flex-shrink-0"
+                  >
+                    01
+                  </span>
+                  <h4 class="fw-medium lh-170 text-success fs-9 mb-0 ms-3 text-nowrap">場址輸入</h4>
+                </div>
+
+                <div class="flex-grow-1">
+                  <p class="mb-0 text-start text-md-center text-lg-start">收集整理場址相關資訊</p>
+                </div>
               </div>
             </div>
           </div>
-          <div class="col-4 d-flex">
+
+          <div class="col-12 col-md-4 d-flex">
             <div class="card bg-warning border-1 w-100">
-              <div class="card-body p-8 d-flex align-items-center">
-                <span
-                  class="stepNumber fw-bold d-inline-flex justify-content-center align-items-center rounded-circle bg-success text-white lh-170"
+              <div
+                class="card-body p-8 d-flex flex-row flex-md-column flex-lg-row align-items-center w-100"
+              >
+                <div
+                  class="d-flex align-items-center flex-shrink-0 border-end border-md-bottom border-lg-end border-secondary pe-4 me-4 pe-md-0 me-md-0 pe-lg-4 me-lg-4 pb-0 mb-0 pb-md-3 mb-md-3 pb-lg-0 mb-lg-0"
                 >
-                  02
-                </span>
-                <h4
-                  class="fw-medium lh-170 text-success fs-9 mb-0 ms-3 border-end border-1 pe-4 me-4 border-secondary"
-                >
-                  潛力評估
-                </h4>
-                <p class="mb-0">瀏覽分析各場址的優劣</p>
+                  <span
+                    class="stepNumber fw-bold d-inline-flex justify-content-center align-items-center rounded-circle bg-success text-white lh-170 flex-shrink-0"
+                    >02</span
+                  >
+                  <h4 class="fw-medium lh-170 text-success fs-9 mb-0 ms-3 text-nowrap">潛力評估</h4>
+                </div>
+                <div class="flex-grow-1">
+                  <p class="mb-0 text-start text-md-center text-lg-start">瀏覽分析各場址的優劣</p>
+                </div>
               </div>
             </div>
           </div>
-          <div class="col-4 d-flex">
+
+          <div class="col-12 col-md-4 d-flex">
             <div class="card bg-warning border-1 w-100">
-              <div class="card-body p-8 d-flex align-items-center">
-                <span
-                  class="stepNumber fw-bold d-inline-flex justify-content-center align-items-center rounded-circle bg-success text-white lh-170"
+              <div
+                class="card-body p-8 d-flex flex-row flex-md-column flex-lg-row align-items-center w-100"
+              >
+                <div
+                  class="d-flex align-items-center flex-shrink-0 border-end border-md-bottom border-lg-end border-secondary pe-4 me-4 pe-md-0 me-md-0 pe-lg-4 me-lg-4 pb-0 mb-0 pb-md-3 mb-md-3 pb-lg-0 mb-lg-0"
                 >
-                  03
-                </span>
-                <h4
-                  class="fw-medium lh-170 text-success fs-9 mb-0 ms-3 border-end border-1 pe-4 me-4 border-secondary"
-                >
-                  決策支援
-                </h4>
-                <p class="mb-0">生成評級支援選址判斷</p>
+                  <span
+                    class="stepNumber fw-bold d-inline-flex justify-content-center align-items-center rounded-circle bg-success text-white lh-170 flex-shrink-0"
+                    >03</span
+                  >
+                  <h4 class="fw-medium lh-170 text-success fs-9 mb-0 ms-3 text-nowrap">決策支援</h4>
+                </div>
+                <div class="flex-grow-1">
+                  <p class="mb-0 text-start text-md-center text-lg-start">生成評級支援選址判斷</p>
+                </div>
               </div>
             </div>
           </div>
@@ -148,7 +164,7 @@
           在三大功能基礎上，依據業務需求展開各項功能，並進行優先排序與分類，確保設計與開發聚焦核心價值。
         </p>
         <div class="row">
-          <div class="col-4">
+          <div class="col-12 col-lg-4">
             <h4 class="fw-medium lh-170 fs-9 text-success pb-4 d-flex">
               <img src="/ChargingStation/MustHavePin.svg" alt="MustHavePin" class="pe-2" />Must Have
             </h4>
@@ -183,7 +199,7 @@
               </tbody>
             </table>
           </div>
-          <div class="col-4">
+          <div class="col-12 col-lg-4">
             <h4 class="fw-medium lh-170 fs-9 text-success pb-4 d-flex">
               <img
                 src="/ChargingStation/NicetoHaveStar.svg"
@@ -214,7 +230,7 @@
               </tbody>
             </table>
           </div>
-          <div class="col-4">
+          <div class="col-12 col-lg-4">
             <h4 class="fw-medium lh-170 fs-9 text-success pb-4 d-flex">
               <img
                 src="/ChargingStation/CanComeLaterLamp.svg"
@@ -559,6 +575,33 @@ p {
 .stepNumber {
   width: 36px;
   height: 36px;
+}
+
+.rotate-mobile {
+  transform: rotate(90deg);
+}
+
+@media (min-width: 992px) {
+  .rotate-mobile {
+    transform: rotate(0deg);
+  }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .border-md-bottom {
+    border-right: 0 !important;
+    border-bottom: 1px solid #b8cade !important;
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+/* 2. 當處於手機或電腦時，確保只有右邊框 */
+@media (max-width: 767.98px), (min-width: 992px) {
+  .border-end,
+  .border-lg-end {
+    border-right: 1px solid #b8cade !important;
+    border-bottom: 0 !important;
+  }
 }
 </style>
 

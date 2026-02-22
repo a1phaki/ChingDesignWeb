@@ -16,7 +16,7 @@
       </div>
 
       <div class="col-12 col-md-5 d-flex">
-        <div class="rounded-3 d-flex justify-content-center align-items-center w-100">
+        <div class="rounded-3 d-flex justify-content-center align-items-center w-100 bg-white">
           <img :src="imgUrl" :alt="alt" :class="['problem-img', sizeClass]" class="rounded-3" />
         </div>
       </div>
